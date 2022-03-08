@@ -3,14 +3,14 @@ public class Exercise4_1 {
 
 	public static void main(String[] args) {
 /*
-1¹ø
-2¹ø
-3¹ø
-4¹ø
-5¹ø
-6¹ø
-7¹ø
-8¹ø
+1ë²ˆ 
+2ë²ˆ 
+3ë²ˆ 
+4ë²ˆ 
+5ë²ˆ 
+6ë²ˆ 
+7ë²ˆ 
+8ë²ˆ 
 */
 	}
 
