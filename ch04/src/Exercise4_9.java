@@ -5,6 +5,7 @@ public class Exercise4_9 {
 		int sum = 0;
 		
 		
+		
 		System.out.println("sum="+sum);
 	}
 

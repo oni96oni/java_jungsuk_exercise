@@ -9,8 +9,10 @@ public class Exercise4_10 {
 
 		do {
 			count++;
-			System.out.println("1°ú 100»çÀÌÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä :");
+			System.out.println("1ê³¼ 100ì‚¬ì´ì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 			input = s.nextInt();
+			
+			
 			
 		} while(true);
 	}
