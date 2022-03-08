@@ -1,22 +1,22 @@
-import java.util.Arrays;  // Arrays.toString()À» »ç¿ëÇÏ±â À§ÇØ Ãß°¡
+import java.util.Arrays;  // Arrays.toString()ì„ ì‚¬ìš©í•˜ê¸° ìœ„í•´ ì¶”ê°€
 
 class Ex5_1 {
 	public static void main(String[] args) {
 		int[] iArr1 = new int[10];
 		int[] iArr2 = new int[10];
-//		int[] iArr3 = new int[]{100, 95, 80, 70, 60}; ÀÌ·¸°Ôµµ ¾µ¼öÀÖ°í ¾Æ·¡ÁÙÃ³·³µµ ¾µ¼öÀÖ´Ù.
+//		int[] iArr3 = new int[]{100, 95, 80, 70, 60}; new int[]ë¥¼ ìƒëµí•  ìˆ˜ ìˆìŒ.
 		int[] iArr3 = {100, 95, 80, 70, 60};
 		char[] chArr = {'a', 'b', 'c', 'd'};
 
 		for (int i=0; i < iArr1.length ; i++ ) {
-			iArr1[i] = i + 1; // 1~10ÀÇ ¼ıÀÚ¸¦ ¼ø¼­´ë·Î ¹è¿­¿¡ ³Ö´Â´Ù.
+			iArr1[i] = i + 1; // 1~10ì˜ ìˆ«ìë¥¼ ìˆœì„œëŒ€ë¡œ ë°°ì—´ì— ë„£ëŠ”ë‹¤.
 		}
 
 		for (int i=0; i < iArr2.length ; i++ ) {
-			iArr2[i] = (int)(Math.random()*10) + 1; // 1~10ÀÇ °ªÀ» ¹è¿­¿¡ ÀúÀå
+			iArr2[i] = (int)(Math.random()*10) + 1; // 1~10ì˜ ê°’ì„ ë°°ì—´ì— ì €ì¥
 		}
 
-		// ¹è¿­¿¡ ÀúÀåµÈ °ªµéÀ» Ãâ·ÂÇÑ´Ù.
+		// ë°°ì—´ì— ì €ì¥ëœ ê°’ë“¤ì„ ì¶œë ¥í•œë‹¤.
 		for(int i=0; i < iArr1.length;i++) {
 			System.out.print(iArr1[i]+",");	
 		}
