@@ -5,11 +5,11 @@ class Ex5_6 {
 		for(int i=0; i < names.length;i++)
 			System.out.println("names["+i+"]:"+names[i]);
 
-		String tmp = names[2]; // ¹è¿­ namesÀÇ ¼¼ ¹øÂ°¿ä¼Ò¸¦ tmp¿¡ ÀúÀå
+		String tmp = names[2]; // ë°°ì—´ namesì˜ ì„¸ë²ˆì§¸ìš”ì†Œë¥¼ tmpì— ì €ìž¥
 		System.out.println("tmp:"+tmp);
-		names[0] = "Yu"; // ¹è¿­ namesÀÇ Ã¹ ¹øÂ° ¿ä¼Ò¸¦ "Yu"·Î º¯°æ
+		names[0] = "Yu"; // ë°°ì—´ namesì˜ ì²«ë²ˆì§¸ ìš”ì†Œë¥¼ "Yu"ë¡œ ë³€ê²½
 
 		for(int i=0; i < names.length;i++)
 			System.out.println(names[i]);
-	} // main
+	} // end of main
 }

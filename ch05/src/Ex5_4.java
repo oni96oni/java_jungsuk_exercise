@@ -6,11 +6,11 @@ class Ex5_4 {
 		System.out.println(Arrays.toString(numArr));
 
 		for (int i=0; i < numArr.length; i++ ) {
-			int n = (int)(Math.random() * 10);  // 0~9 ÁßÀÇ ÇÑ °ªÀ» ÀÓÀÇ·Î ¾ò´Â´Ù.
+			int n = (int)(Math.random() * 10);  // 0~9 ë‚œìˆ˜ ì„¤ì •
 			int tmp = numArr[i];
 			numArr[i] = numArr[n];
 			numArr[n] = tmp;
 			System.out.println(Arrays.toString(numArr));
 		}
-	} // mainÀÇ ³¡
+	} // end of method
 }

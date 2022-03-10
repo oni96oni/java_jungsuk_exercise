@@ -2,10 +2,10 @@ class Ex5_3 {
 	public static void main(String[] args) { 
 		int[] score = { 79, 88, 91, 33, 100, 55, 95 }; 
 
-		int max = score[0]; // ¹è¿­ÀÇ Ã¹ ¹øÂ° °ªÀ¸·Î ÃÖ´ë°ªÀ» ÃÊ±âÈ­ ÇÑ´Ù. 
-		int min = score[0]; // ¹è¿­ÀÇ Ã¹ ¹øÂ° °ªÀ¸·Î ÃÖ¼Ò°ªÀ» ÃÊ±âÈ­ ÇÑ´Ù. 
+		int max = score[0]; // ë°°ì—´ì˜ ì²« ë²ˆì§¸ ê°’ìœ¼ë¡œ ìµœëŒ€ê°’ì„ ì´ˆê¸°í™” í•œë‹¤.
+		int min = score[0]; // ë°°ì—´ì˜ ì²« ë²ˆì§¸ ê°’ìœ¼ë¡œ ìµœì†Œê°’ì„ ì´ˆê¸°í™” í•œë‹¤.
 
-		for(int i=1; i < score.length;i++) { //79´Â ÀúÀåÇßÀ¸´Ï 0ÀÌ ¾Æ´Ï¶ó 1ºÎÅÍ
+		for(int i=1; i < score.length;i++) { // ì²«ë²ˆì§¸ê°’ìœ¼ë¡œ ë¹„êµí•˜ë¯€ë¡œ iê°€ 0ì´ ì•„ë‹ˆë¼ 1ë¶€í„° ì‹œì‘
 			if(score[i] > max) { 
 				max = score[i]; 
 			} else if(score[i] < min) { 
@@ -13,7 +13,7 @@ class Ex5_3 {
 			} 
 		} // end of for 
 
-		System.out.println("ÃÖ´ë°ª :" + max);       
-		System.out.println("ÃÖ¼Ò°ª :" + min);       
+		System.out.println("ìµœëŒ€ê°’ :" + max);       
+		System.out.println("ìµœì†Œê°’ :" + min);       
 	} // end of main 
 } // end of class
