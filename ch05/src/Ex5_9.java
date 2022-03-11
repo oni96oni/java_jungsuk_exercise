@@ -7,31 +7,31 @@ class Ex5_9 {
 							, { 40, 40, 40}
 							, { 50, 50, 50}
 						};
-		// °ú¸ñº° ÃÑÁ¡
+		// ê³¼ëª©ë³„ ì´ì 
 		int korTotal = 0, engTotal = 0, mathTotal = 0;
 
-	    System.out.println("¹øÈ£  ±¹¾î  ¿µ¾î  ¼öÇĞ  ÃÑÁ¡  Æò±Õ ");
+	    System.out.println("ë²ˆí˜¸  êµ­ì–´	  ì˜ì–´  ìˆ˜í•™  ì´ì   í‰ê· ");
 	    System.out.println("=============================");
 
 		for(int i=0;i < score.length;i++) {
-			int  sum = 0;      // °³ÀÎº° ÃÑÁ¡
-			float avg = 0.0f;  // °³ÀÎº° Æò±Õ
+			int  sum = 0;      // ì´ì 
+			float avg = 0.0f;  // í‰ê· 
 
-			korTotal  += score[i][0]; //°ú¸ñº° ÇÕ°è¸¦ ¿©±â¼­±¸ÇÔ
-			engTotal  += score[i][1];
-			mathTotal += score[i][2];
-			System.out.printf("%3d", i+1); //°á°úÃ¢ÀÇ ¹øÈ£Ãâ·Â
+			korTotal  += score[i][0]; //0í–‰ì˜ ì ìˆ˜ë“¤ì€ êµ­ì–´ì ìˆ˜ - ê°í–‰ë“¤ì˜ ì ìˆ˜ë¥¼ í•©ì¹¨.
+			engTotal  += score[i][1]; //1í–‰ì˜ ì ìˆ˜ë“¤ì€ ì˜ì–´ì ìˆ˜
+			mathTotal += score[i][2]; //2í–‰ì˜ ì ìˆ˜ë“¤ì€ ìˆ˜í•™ì ìˆ˜
+			System.out.printf("%3d", i+1); // ì œì¼ì²˜ìŒì— ë²ˆí˜¸ ì¶œë ¥
 
 			for(int j=0;j < score[i].length;j++) {
-				sum += score[i][j];  //ÇĞ»ıÀÇ ÇÕ°è¸¦ ¿©±â¼­±¸ÇÔ
-				System.out.printf("%5d", score[i][j]); // ±¹¾î ¿µ¾î ¼öÇĞ Á¡¼ö ¹è¿­³ª¿­ 
+				sum += score[i][j];  // ì´ì  ë”í•˜ê¸°
+				System.out.printf("%5d", score[i][j]); // ê° ê³¼ëª© ì ìˆ˜ì¶œë ¥
 			}
 			
-			avg = sum/(float)score[i].length;  // ÃÑÇÕ, Æò±Õ°è»ê
-			System.out.printf("%5d %5.1f%n", sum, avg);
+			avg = sum/(float)score[i].length;  
+			System.out.printf("%5d %5.1f%n", sum, avg); // ì´ì , í‰ê· ì¶œë ¥
 		}
 
 		System.out.println("=============================");
-     	System.out.printf("ÃÑÁ¡:%3d %4d %4d%n", korTotal, engTotal, mathTotal);
+     	System.out.printf("ì´ì : %3d %4d %4d%n", korTotal, engTotal, mathTotal);
 	}
 }
