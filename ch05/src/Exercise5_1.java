@@ -2,15 +2,14 @@
 public class Exercise5_1 {
 
 	public static void main(String[] args) {
-/*
-1번 2차원배열 저렇게 선언가능 
-2번 1차원배열 맨뒤 콤마뒤에 값이 없음 땡
-3번 생성 가능 
-4번 땡 인트뒤에 5를 빼야함 뒤에 {} 괄호안의 개수만큼 자동생성
-5번 가능 그냥 배열의 선언만함 초기화만안했을뿐 
-6번 땡 열부분에 아무값이 안들어감
-
- */
+		
+//		int[] arr[];
+//		int[] arr1 = {1,2,3};
+//		int[] arr2 = new int[5];
+//		int[] arr3 = new int[5] {1,2,3,4,5};
+//		int arr4[5];
+//		int[] arr5[] = new int [3][];
+		
 	}
 
 }

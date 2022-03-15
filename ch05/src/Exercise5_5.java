@@ -10,17 +10,12 @@ public class Exercise5_5 {
 			int j = (int)(Math.random()*ballArr.length);
 			int tmp =0;
 			
-			tmp = ballArr[i];
-			ballArr[i] = ballArr[j];
-			ballArr[j] = tmp;
 			
 		}
 		
-		ball3 = Arrays.copyOf(ballArr, 3);
 		
 		for(int i=0;i<ball3.length;i++) {
 			System.out.print(ball3[i]);
 		}
-	}
-
-}
+	} // end of main
+} //end of class

@@ -1,4 +1,4 @@
-import java.util.Arrays; //ctir+shift+o ÀÚµ¿À¸·Î import¹® Ãß°¡
+import java.util.Arrays; //ctir+shift+o 
 import java.util.Scanner;
 
 class Exercise5_6 {
@@ -9,24 +9,19 @@ class Exercise5_6 {
 		for (int i=0; i<words.length; i++) {
 			char[] question = words[i].toCharArray();
 			
-			for(int j=0; j<question.length;j++) {
-				int idx = (int)(Math.random()*question.length);
+			for(int j=0; j<question.length; j++) {
 				
-				char tmp = question[i];
-				question[i] = question[idx];
-				question[idx] = tmp;
 			}
 			
-			
-			
-			System.out.printf("Q%d. %sÀÇ Á¤´äÀ» ÀÔ·ÂÇÏ¼¼¿ä>",i+1, new String(question));
+			System.out.printf("Q%d. %sì˜ ì •ë‹µì„ ì…ë ¥í•˜ì„¸ìš”.>",i+1, new String(question));
 			
 			String answer = scanner.nextLine();
 			
+			// trim()ìœ¼ë¡œ answerì˜ ì¢Œìš° ê³µë°±ì„ ì œê±°í•œ í›„, equalsë¡œ word[i]ì™€ ë¹„êµ
 			if( words[i].equals(answer.trim()))
-				System.out.printf("¸Â¾Ò½À´Ï´Ù%n%n");
+				System.out.printf("ë§ì•˜ìŠµë‹ˆë‹¤.%n%n");
 			else {
-				System.out.printf("Æ²·È½À´Ï´Ù.%n%n");
+				System.out.printf("í‹€ë ¸ìŠµë‹ˆë‹¤.%n%n");
 			}
 		}
 				

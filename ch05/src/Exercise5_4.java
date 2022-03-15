@@ -12,13 +12,7 @@ public class Exercise5_4 {
 		int total =0;
 		float average =0.0f;
 		
-		for(int i=0; i<arr.length; i++) {
-			for(int j=0; j<arr[i].length; j++) {
-				total += arr[i][j];
-			}
-		}
-		
-		average = total/(float)(arr[0].length*arr.length);
+	
 		
 		System.out.println("total="+total);
 		System.out.println("average="+average);
