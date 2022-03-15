@@ -9,9 +9,7 @@ class Exercise5_6 {
 		for (int i=0; i<words.length; i++) {
 			char[] question = words[i].toCharArray();
 			
-			for(int j=0; j<question.length; j++) {
-				
-			}
+			
 			
 			System.out.printf("Q%d. %s의 정답을 입력하세요.>",i+1, new String(question));
 			
