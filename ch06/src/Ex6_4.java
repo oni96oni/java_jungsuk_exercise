@@ -1,15 +1,13 @@
-import javax.naming.spi.DirStateFactory.Result;
-
 class Ex6_4 {
 	public static void main(String args[]) {
 		MyMath mm = new MyMath();
 		long result1 = mm.add(5L, 3L);
 		long result2 = mm.subtract(5L, 3L);
 		long result3 = mm.multiply(5L, 3L);
-		double result4 = mm.divide(5L, 3L);
+		double result4 = mm.divide(5L, 3L); //doubleí˜•ì¸ë° ë¦¬í„°ëŸ´Lì„ì‚¬ìš©(ì¦‰, longíƒ€ì… ì‚¬ìš©)í–ˆë‹¤. í‹€ì˜ ë²”ìœ„ê°€ ë” í¬ë‹ˆê¹Œ ì‘ì€ íƒ€ì…ë„ ë°›ì•„ì¤„ ìˆ˜ ìˆëŠ”ê²ƒ! 
 		long result5 = mm.max(5L, 3L);
 		long result6 = mm.min(5L, 3L);
-		mm.printGugudan(9); //±¸±¸´Ü ½ÇÇà!
+		mm.printGugudan(9); //mmí´ë˜ìŠ¤ì˜ printGugudan()ë©”ì„œë“œ í˜¸ì¶œ
 		
 		System.out.println("add(5L, 3L) = " + result1);
 		System.out.println("subtract(5L, 3L) = " + result2);
@@ -24,32 +22,31 @@ class Ex6_4 {
 	 
 	void printGugudan(int dan) {
 		if(!(2<=dan && dan<=9))
-			return; //ÀÔ·Â¹ŞÀº ´Ü(dan)ÀÌ 2~9°¡ ¾Æ´Ï¸é, ¸Ş¼­µå Á¾·áÇÏ°í µ¹¾Æ°¡±â
+			return; //ë§¤ê°œë³€ìˆ˜ danì´ 2~9ê°€ ì•„ë‹Œê°’ì´ ë“¤ì–´ì˜¤ë©´ ëë‚´ê³  í˜¸ì¶œí•œ ë©”ì„œë“œë¡œ ëŒì•„ê°„ë‹¤.
 		
 		for(int i=1; i<=9;i++) {
 			System.out.printf("%d * %d = %d%n", dan, i, dan *i);
 		}
-		 return; //¿©±â ¸®ÅÏÀº »ı·«ÀÌ °¡´ÉÇÑºÎºĞ!
+		 return; //ì…ë ¥ê°’ì€ ìˆê³  ì¶œë ¥ê°’ì€ ì—†ëŠ”ê²½ìš°
 	}
 	long add(long a, long b) {
 		long result = a + b;
 		return  result;
-	//	return a + b;	// À§ÀÇ µÎ ÁÙÀ» ÀÌ¿Í °°ÀÌ ÇÑ ÁÙ·Î °£´ÜÈ÷ ÇÒ ¼ö ÀÖ´Ù.
+	//	return a + b;	// ìœ„ì˜ ë‘ì¤„ì„ ì´ë ‡ê²Œ í•œì¤„ë¡œ ìš”ì•½í• ìˆ˜ìˆë‹¤.
 	}
 	long subtract(long a, long b) { return a - b; }
 	long multiply(long a, long b) { return a * b; }
 	double divide(double a, double b) {
 		return a / b;}
-	// µÎ °ªÀ» ¹Ş¾Æ¼­ µÑ Áß¿¡ Å«°ªÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼­µå ÀÛ¼ºÇØº¸±â
 	
 	long max(long a, long b) { 
 		long result =0;
 		if(a>b) {
-			result = a; //Á¶°Ç½ÄÀÌ ÂüÀÏ¶§
+			result = a; // í¬ë©´ a
 		} else {
-			result = b; //Á¶°Ç½ÄÀÌ °ÅÁşÀÏ¶§
+			result = b; // ì‘ê±°ë‚˜ ê°™ìœ¼ë©´ b
 		} return result;
-	//  a > b ? a : b; ÀÌ·¸°Ôµµ ÀÛ¼º°¡´É
+	//  a > b ? a : b; ìœ„ì˜ ifë¬¸ì„ ì‚¼í•­ì¡°ê±´ì—°ì‚°ìë¡œ í‘œí˜„í•˜ë©´ ì´ë ‡ë‹¤.
 	}
 	long min(long a, long b) {
 		 long result = 0;
