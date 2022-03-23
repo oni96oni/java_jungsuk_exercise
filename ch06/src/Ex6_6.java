@@ -6,14 +6,13 @@ class Ex6_6 {
 		d.x = 10;
 		System.out.println("main() : x = " + d.x);
 
-		change(d.x);
-		System.out.println("After change(d.x)");//¿©±â¼­ ÄÜ¼Ö°ª µÑÂ°ÁÙ°ú ¼ÂÂ°ÁÙ ¹Ù²ï°Å°°Àº ÀÌÀ¯
-		// change(d.x) ¸Ş¼­µå¿¡ x=1000;»Ó¸¸¾Æ´Ï¶ó printlnµµ ÀÖ¾î¼­ Àú°Í±îÁö ½ÇÇàÇÏ°í ¸¶Ä£´Ù.
+		change(d.x); // ê°’ì„ ì§‘ì–´ë„£ìŒ
+		System.out.println("After change(d.x)");
 		System.out.println("main() : x = " + d.x);
 	}
-
-	static void change(int x) {  // ±âº»Çü ¸Å°³º¯¼ö
-		x = 1000;
+	// ê¸°ë³¸í˜• ë§¤ê°œë³€ìˆ˜
+	static void change(int x) {  
+		x = 1000; //changeë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜ xì˜ ê°’ì´ ë³€ê²½
 		System.out.println("change() : x = " + x);
 	}
 }

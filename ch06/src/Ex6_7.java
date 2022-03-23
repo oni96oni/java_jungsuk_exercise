@@ -6,12 +6,12 @@ class Ex6_7 {
 		d.x = 10;
 		System.out.println("main() : x = " + d.x);
 
-		change(d);
+		change(d); // ì£¼ì†Œê°’ì„ ì§‘ì–´ë„£ìŒ
 		System.out.println("After change(d)");
 		System.out.println("main() : x = " + d.x);
 	}
-
-	static void change(Data2 d) { // ÂüÁ¶Çü ¸Å°³º¯¼ö
+	//ì°¸ì¡°í˜• ë§¤ê°œë³€ìˆ˜
+	static void change(Data2 d) { 
 		d.x = 1000;
 		System.out.println("change() : x = " + d.x);
 	}
