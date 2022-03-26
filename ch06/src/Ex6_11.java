@@ -1,22 +1,21 @@
 class Data_1 {
 	int value;
-	// Data_1(){} ¿ø·¡ ÀÌ·¸°Ô ±âº»»ý¼ºÀÚ¸¦ Ãß°¡ÇØÁÖ¾î¾ßÇØ ±×·±µ¥ ¿©±â´Â »ý¼ºÀÚ°¡ ÇÏ³ªµµ ¾ø±â¶§¹®¿¡ 
-	// ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î Ãß°¡ÇØÁÖ´Â°Í! 
+	// Data_1(){} í´ëž˜ìŠ¤ì— ìƒì„±ìžê°€ ì—†ìœ¼ë¯€ë¡œ ì»´íŒŒì¼ëŸ¬ê°€ ê¸°ë³¸ìƒì„±ìžë¥¼ ìžë™ì ìœ¼ë¡œ ì¶”ê°€í•˜ì—¬ ì»´íŒŒì¼
 }
 
 class Data_2 {
 	int value;
 	
-	//Data_2(){} //±âº» »ý¼ºÀÚ È£Ãâ
-	Data_2(int x) {   // ¸Å°³º¯¼ö°¡ ÀÖ´Â »ý¼ºÀÚ.
+//	Data_2(){} ì´ë ‡ê²Œ ë”°ë¡œ ì¶”ê°€í•´ì£¼ì–´ì•¼ 19ë²ˆì§¸ì¤„ ì—ëŸ¬ ì†Œë©¸ 
+	
+	Data_2(int x) {   
 		value = x;
 	}
-	//Data_2(){}
 }
 
 class Ex6_11 {
 	public static void main(String[] args) {
 		Data_1 d1 = new Data_1();
-		Data_2 d2 = new Data_2(); // compile error¹ß»ý
+		Data_2 d2 = new Data_2(); // compile errorë°œìƒ! -> ë§¤ê°œë³€ìˆ˜ê°€ ì—†ëŠ” ìƒì„±ìžê°€ ì—†ì–´ì„œ
 	}
 }
