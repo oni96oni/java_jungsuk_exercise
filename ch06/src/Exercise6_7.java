@@ -1,9 +1,9 @@
 
 public class Exercise6_7 {
-	int x = 0, y =0; //
-	int hp = 60; //
-	int weapon = 6; //
-	int armor = 0; //
+	int x = 0, y =0; //Marine의 위치좌표(x,y)
+	int hp = 60; // 현재 체력
+	int weapon = 6; // 공격력
+	int armor = 0; // 방어력
 	
 	void weaponUp() {
 	weapon++;	

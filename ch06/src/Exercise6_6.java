@@ -7,7 +7,6 @@ class MyPoint {
 		this.y = y;
 	}
 
-	
 }
 class Exercise6_6 {
 public static void main(String[] args) {

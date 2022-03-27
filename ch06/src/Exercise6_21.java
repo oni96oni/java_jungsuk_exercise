@@ -1,31 +1,9 @@
 public class Exercise6_21 {
 	
-	static int abs(int value) {
-		
-	}
-	
 	public static void main(String[] args) {
-		int value = 0;
-		System.out.println(value + "ÀÇ Àı´ë°ª:" +abs(value));
+		int value = 5;
+		System.out.println(value + "ì˜ ì ˆëŒ€ê°’:" +abs(value));
 		value = -10;
-		System.out.println(value + "ÀÇ Àı´ë°ª:" +abs(value));
+		System.out.println(value + "ì˜ ì ˆëŒ€ê°’:" +abs(value));
 	}
-
-	
-
 }
-
-//³»°¡Çß´ø°Í
-//public static int abs(int value) {
-//	value = Math.abs(value);
-//	return value;
-//}
-
-//if¹®À» »ç¿ëÇÑ ÄÚµå
-//public static int abs(int value) {
-//	if(value>=0) {
-//		return value;
-//	} else {
-//		return -value;
-//	}
-//}

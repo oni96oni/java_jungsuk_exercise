@@ -1,18 +1,12 @@
-
 public class Exercise6_18 {
 
-	static boolean isNumber(String str) {
-		
-	}	
+	
 	
 	public static void main(String[] args) {
-		String str = "2453566263684453696345463398645644";
-		System.out.println(str + "´Â ¼ıÀÚÀÔ´Ï±î?" + isNumber(str));
+		String str = "1234";
+		System.out.println(str + "ëŠ” ìˆ«ìì…ë‹ˆê¹Œ?" + isNumber(str));
 
 		str = "1234a";
-		System.out.println(str + "´Â ¼ıÀÚÀÔ´Ï±î?" + isNumber(str));
+		System.out.println(str + "ëŠ” ìˆ«ìì…ë‹ˆê¹Œ?" + isNumber(str));
 	}
-
-	
-
 }

@@ -1,10 +1,6 @@
 
 class Exercise6_17 {
 	
-	static int[] shuffle(int[] arr) {
-		
-	}
-	
 	public static void main(String[] args) {
 		int[] original = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		System.out.println(java.util.Arrays.toString(original));
