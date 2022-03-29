@@ -1,20 +1,20 @@
 class Product {
-	int price;			// Á¦Ç°ÀÇ °¡°İ
-	int bonusPoint;	// Á¦Ç°±¸¸Å ½Ã Á¦°øÇÏ´Â º¸³Ê½ºÁ¡¼ö
+	int price;			// ì œí’ˆì˜ ê°€ê²©
+	int bonusPoint;	// ì œí’ˆ êµ¬ë§¤ì‹œ ì œê³µí•˜ëŠ” ë³´ë„ˆìŠ¤ ì ìˆ˜
 
 	Product(int price) {
 		this.price = price;
-		bonusPoint = (int)(price/10.0);	// º¸³Ê½ºÁ¡¼ö´Â Á¦Ç°°¡°İÀÇ 10%
+		bonusPoint = (int)(price/10.0);	// ë³´ë„ˆìŠ¤ ì ìˆ˜ëŠ” ì œí’ˆì˜ ê°€ê²©ì˜ 10%
 	} 
 }
 
 class Tv1 extends Product {
 	Tv1() {
-		// Á¶»óÅ¬·¡½ºÀÇ »ı¼ºÀÚ Product(int price)¸¦ È£ÃâÇÑ´Ù.
-		super(100);		// TvÀÇ °¡°İÀ» 100¸¸¿øÀ¸·Î ÇÑ´Ù.
+		// ì¡°ìƒí´ë˜ìŠ¤ì˜ ìƒì„±ì Product(int price)ë¥¼ í˜¸ì¶œí•œë‹¤ -> superì‚¬ìš©
+		super(100);		// Tvì˜ ê°€ê²©ì€ 100ìœ¼ë¡œ í•œë‹¤.
 	}
 
-	// ObjectÅ¬·¡½ºÀÇ toString()À» ¿À¹ö¶óÀÌµùÇÑ´Ù.
+	// Objectí´ë˜ìŠ¤ì˜ toString()ì„ ì˜¤ë²„ë¼ì´ë”© í•œë‹¤.
 	public String toString() { return "Tv"; }
 }
 
@@ -24,20 +24,21 @@ class Computer extends Product {
 	public String toString() { return "Computer"; }
 }
 
-class Buyer {	// °í°´, ¹°°ÇÀ» »ç´Â »ç¶÷
-	int money = 1000;	  // ¼ÒÀ¯±İ¾×
-	int bonusPoint = 0; // º¸³Ê½ºÁ¡¼ö
-
+class Buyer {	// ê³ ê°, ë¬¼ê±´ì„ ì‚¬ëŠ”ì‚¬ëŒ
+	int money = 1000;	  // ë³´ìœ í•œ ê¸ˆì•¡
+	int bonusPoint = 0; // ë³´ë„ˆìŠ¤ ì ìˆ˜
+	
 	void buy(Product p) {
 		if(money < p.price) {
-			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÏ¿© ¹°°ÇÀ» »ì ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•˜ì—¬ ë¬¼ê±´ì„ ì‚´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
 
-		money -= p.price;            // °¡Áø µ·¿¡¼­ ±¸ÀÔÇÑ Á¦Ç°ÀÇ °¡°İÀ» »«´Ù.
-		bonusPoint += p.bonusPoint;  // Á¦Ç°ÀÇ º¸³Ê½º Á¡¼ö¸¦ Ãß°¡ÇÑ´Ù.
-		System.out.println(p.toString() + "À»/¸¦ ±¸ÀÔÇÏ¼Ì½À´Ï´Ù."); //pÇÏ°í p.toString()Àº µ¿ÀÏÇÑ°ÍÀÌ´Ù!
-		//System.out.println(p + "À»/¸¦ ±¸ÀÔÇÏ¼Ì½À´Ï´Ù."); //pÇÏ°í p.toString()Àº µ¿ÀÏÇÑ°ÍÀÌ´Ù!
+		money -= p.price;            // moneyì—ì„œ êµ¬ë§¤í•œ ì œí’ˆì˜ ê°€ê²©ë§Œí¼ ë¹¼ì¤€ë‹¤.
+		bonusPoint += p.bonusPoint;  // ì œí’ˆì˜ 10%ì— í•´ë‹¹í•˜ëŠ” ë³´ë„ˆìŠ¤ì ìˆ˜ë¥¼ ì¶”ê°€í•œë‹¤.
+		System.out.println(p.toString() + "ì„/ë¥¼ êµ¬ì…í•˜ì…¨ìŠµë‹ˆë‹¤."); //êµ¬ë§¤í•œ ì œí’ˆì„ êµ¬ë§¤í–ˆë‹¤ëŠ” ì¶œë ¥
+//		System.out.println(p + "ì„/ë¥¼ êµ¬ì…í•˜ì…¨ìŠµë‹ˆë‹¤.");  ìœ„ì™€ ë™ì¼í•˜ë‹¤ ì™œëƒí•˜ë©´ ì°¸ì¡°ë³€ìˆ˜+ë¬¸ìì—´ì€ ì°¸ì¡°ë³€ìˆ˜.toString()+ë¬¸ìì—´ë¡œ ì²˜ë¦¬ë˜ê¸° ë•Œë¬¸ì´ë‹¤.
+
 	}
 }
 
@@ -46,13 +47,11 @@ class Ex7_8 {
 		Buyer b = new Buyer();
 		
 		Product p = new Tv1();
-		b.buy(p);
-		//ÀÌ µÎÁÙÀÌ ¾Æ·¡°¡ µÇ´Â°Í
-		b.buy(new Tv1()); //buy(Product p)
-		//ÂüÁ¶º¯¼ö¾øÀÌ Á÷Á¢³ÖÀ»¼ö ÀÖ´Ù ÇÏÁö¸¸ ÂüÁ¶º¯¼ö¾øÀ¸¸é ¿©±â¼­ »ç¿ëÀÌ ¾ÈµÅ ¸®¸ğÄÁÀÌ ¾ø¾î¼­
-		b.buy(new Computer()); //but(Product p)
+		b.buy(p); //252p ì°¸ê³ ìë£Œë¥¼ êµ¬í˜„
+		b.buy(new Tv1()); 
+		b.buy(new Computer()); 
 
-		System.out.println("ÇöÀç ³²Àº µ·Àº " + b.money + "¸¸¿øÀÔ´Ï´Ù.");
-		System.out.println("ÇöÀç º¸³Ê½ºÁ¡¼ö´Â " + b.bonusPoint + "Á¡ÀÔ´Ï´Ù.");
+		System.out.println("í˜„ì¬ ë‚¨ì€ ëˆì€ " + b.money + "ë§Œì›ì…ë‹ˆë‹¤.");
+		System.out.println("í˜„ì¬ ë³´ë„ˆìŠ¤ ì ìˆ˜ëŠ” " + b.bonusPoint + "ì ì…ë‹ˆë‹¤.");
 	}
 }

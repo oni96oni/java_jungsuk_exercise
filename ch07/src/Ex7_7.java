@@ -4,14 +4,10 @@ class Ex7_7 {
 		FireEngine fe = new FireEngine();
 		FireEngine fe2 = null;
 		
-		//Çüº¯È¯ÇÒ¶§ Áß¿äÇÑ°ÍÀº ½ÇÁ¦ ÀÎ½ºÅÏ½º°¡ ¹«¾ùÀÎÁö°¡ Áß¿ä! ¹«½¼¼Ò¸®¾ß? »ý¼ºµÈ °´Ã¼(ÀÎ½ºÅÏ½º)°¡ ¹«¾ùÀÎÁö Áß¿äÇØ! »ý¼º¾ÈÇÏ°í Çüº¯È¯¸¸ÇÏ¸é 
-		//null°ªÀ¸·Î ½ÇÇàÇÒ¼öµµÀÖ¾î ½ÇÇàÇÏ¸é ¿¡·¯°¡ ±×Á¦¼­¾ß ¶ä ±×¸®°í »ý¼ºµÈ °´Ã¼(ÀÎ½ºÅÏ½º)ÀÇ ¸â¹ö°³¼ö°¡ Áß¿ä! ±× ¸â¹ö°³¼ö¸¦ ³Ñ¾î¼­¸é Çüº¯È¯Àº µÇÁö¸¸
-		//½ÇÇàÇÏ¸é ¿¡·¯°¡ ¶á´Ù. Á¶»ó¿¡¼­ ÀÚ¼Õ°¥¶§ ¿¡·¯¸¦ °áÁ¤ÇÏ´Â°ÍÀº ½ÇÁ¦°´Ã¼´Ù! ( ±×Áß¿¡¼­µµ ¸â¹öµé )
-		
 		fe.water();
-		car = fe;    // car = (Car)fe;¿¡¼­ Çüº¯È¯ÀÌ »ý·«µÊ ¿Ö? ´Ù·ê¼ö ÀÖ´Â ¸â¹öÀÇ °³¼ö°¡ ÁÙ¾îµå´Â ¹æÇâÀ¸·Î °¡´Â°Ç ¾ÈÀüÇÏ´Ï±î.
-//		car.water(); CarÅ¸ÀÔÀÇ ÂüÁ¶º¯¼öÀÎ car·Î´Â water()¸¦ »ç¿ëºÒ°¡ CarÀÇ ¸®¸ðÄÁ¿¡´Â water()¸Þ¼­µå(±â´É)ÀÌ ¾ø¾î!
-		fe2 = (FireEngine)car; // ÀÚ¼ÕÅ¸ÀÔ ¡ç Á¶»óÅ¸ÀÔ. Çüº¯È¯ »ý·« ºÒ°¡ ¿Ö? À§ÇèÇÏ´Ï±î! ¹¹°¡? ´Ù·ê¼öÀÖ´Â ¸â¹öÀÇ °³¼ö°¡ ´Ã¾î³ª´Â°Ç À§ÇèÇØ
+		car = fe;    // car = (Car)fe; ì—ì„œ í˜•ë³€í™˜ì´ ìƒëžµë¨ ì•ˆì „í•˜ë‹ˆê¹Œ! ì‚¬ìš©í• ìˆ˜ìžˆëŠ” ë©¤ë²„ì˜ ê°œìˆ˜ê°€ ì¤„ì–´ë“œëŠ” ë°©í–¥ì´ë‹ˆê¹Œ
+//		car.water(); caríƒ€ìž… ë¦¬ëª¨ì»¨(ì°¸ì¡°ë³€ìˆ˜)ì—ëŠ” water()ë¼ëŠ” ë²„íŠ¼ì´ ì¡´ìž¬í•˜ì§€ ì•Šì•„ì„œ ì‹¤í–‰ë¶ˆê°€
+		fe2 = (FireEngine)car; // ìžì†íƒ€ìž… <- ì¡°ìƒíƒ€ìž… í˜•ë³€í™˜ ìƒëžµ ë¶ˆê°€ 
 		fe2.water();
 	}
 }
@@ -20,17 +16,17 @@ class Car {
 	String color;
 	int door;
 
-	void drive() { 	// ¿îÀüÇÏ´Â ±â´É
+	void drive() { 	// ìš´ì „í•˜ëŠ” ê¸°ëŠ¥
 		System.out.println("drive, Brrrr~");
 	}
 
-	void stop() {  	// ¸ØÃß´Â ±â´É	
+	void stop() {  	// ë©ˆì¶”ëŠ” ê¸°ëŠ¥
 		System.out.println("stop!!!");	
 	}
 }
 
-class FireEngine extends Car {	// ¼Ò¹æÂ÷
-	void water() {	// ¹°À» »Ñ¸®´Â ±â´É
+class FireEngine extends Car {	// ì†Œë°©ì°¨
+	void water() {	// ë¬¼ì„ ë¿Œë¦¬ëŠ” ê¸°ëŠ¥
 		System.out.println("water!!!");
 	}
 }
