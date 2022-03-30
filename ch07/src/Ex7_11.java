@@ -1,8 +1,8 @@
 class Ex7_11 {
 	public static void main(String[] args) {
 		Child3 c = new Child3();
-		c.method1();
-		c.method2();
+		c.method1(); // 여러 인터페이스의 디폴트 메서드간의 충돌하는 경우 : 조상클래스의 메서드가 상속, 디폴트 메서드는 무시
+		c.method2(); // 디폴트 메서드와 조상클래스의 메서드 간의 충돌하는 경우 : 구현한 클래스에서 디폴트 메서드를 오버라이딩해줘야한다.
 		MyInterface.staticMethod(); 
 		MyInterface2.staticMethod();
 	}
@@ -10,7 +10,7 @@ class Ex7_11 {
 
 class Child3 extends Parent3 implements MyInterface, MyInterface2 {
 	public void method1() {	
-		System.out.println("method1() in Child3"); // �������̵�
+		System.out.println("method1() in Child3"); // 오버라이딩
 	}			
 }
 
