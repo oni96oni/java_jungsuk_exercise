@@ -1,28 +1,30 @@
 class Ex7_12 { 
 	class InstanceInner { 
 		int iv = 100; 
-//		static int cv = 100;            // ¿¡·¯! staticº¯¼ö¸¦ ¼±¾ğÇÒ ¼ö ¾ø´Ù. 
-		final static int CONST = 100;   // final staticÀº »ó¼öÀÌ¹Ç·Î Çã¿ë
+//		static int cv = 100;            // ì—ëŸ¬! staticë³€ìˆ˜ë¥¼ ì„ ì–¸í•  ìˆ˜ ì—†ë‹¤. static í´ë˜ìŠ¤ë§Œ ê°€ëŠ¥! static ë©¤ë²„ëŠ” ê°ì²´ ìƒì„±ì—†ì´ ì‚¬ìš©ê°€ëŠ¥ í•´ì•¼ í•˜ëŠ”ë° ì¸ìŠ¤í„´ìŠ¤, ì§€ì—­ í´ë˜ìŠ¤ ì•ˆì— ìˆëŠ” staticë©¤ë²„ì˜ ê²½ìš°ëŠ” ê°ì²´ê°€ ìƒì„±ë˜ì–´ì•¼ì§€ ì‚¬ìš©í•  ìˆ˜ ìˆìœ¼ë¯€ë¡œ ë¶ˆê°€í•˜ë‹¤.
+		final static int CONST = 100;   // final staticì€ ìƒìˆ˜ì´ë¯€ë¡œ í—ˆìš©
 	} 
 
    static class StaticInner { 
 		int iv = 200; 
-		static int cv = 200;    // staticÅ¬·¡½º¸¸ static¸â¹ö¸¦ Á¤ÀÇÇÒ ¼ö ÀÖ´Ù. 
+		static int cv = 200;    // staticí´ë˜ìŠ¤ë§Œ staticë©¤ë²„ë¥¼ ì •ì˜ í•  ìˆ˜ ìˆë‹¤.
 	} 
 
 	void myMethod() { 
 		class LocalInner { 
 			int iv = 300; 
-//			static int cv = 300;             // ¿¡·¯! staticº¯¼ö¸¦ ¼±¾ğÇÒ ¼ö ¾ø´Ù. 
-			final static int CONST = 300;    // final staticÀº »ó¼öÀÌ¹Ç·Î Çã¿ë 
+//			static int cv = 300;             // ì—ëŸ¬! staticë³€ìˆ˜ë¥¼ ì„ ì–¸í•  ìˆ˜ ì—†ë‹¤.
+			final static int CONST = 300;    // final staticì€ ìƒìˆ˜ì´ë¯€ë¡œ í—ˆìš©
 		} 
 		
-		int i = LocalInner.CONST; //OK Áö¿ª ³»ºÎ Å¬·¡½ºÀÇ static »ó¼ö´Â ¸Ş¼­µå ³»¿¡¼­¸¸ »ç¿ë°¡´É
+		int i = LocalInner.CONST; //OK 
+		System.out.println(i);
 	} 
 
 	public static void main(String args[]) { 
 		System.out.println(InstanceInner.CONST); 
 		System.out.println(StaticInner.cv); 
-		System.out.println(LocalInner.Const); //NO
+//		System.out.println(LocalInner.Const); NO
+		
 	} 
 }

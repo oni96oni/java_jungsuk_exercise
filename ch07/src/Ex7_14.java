@@ -8,9 +8,9 @@ class Outer22{
 	}
 	
 	static class StaticInner{
-//		½ºÅÂÆ½ Å¬·¡½º´Â ¿ÜºÎ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º ¸â¹ö¿¡ Á¢±ÙÇÒ ¼ö ¾ø´Ù.
+//		ìŠ¤íƒœí‹± í´ë˜ìŠ¤ëŠ” ì™¸ë¶€ í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ì— ì ‘ê·¼í•  ìˆ˜ ì—†ë‹¤.
 //		int siv = outerIv;
-		static int scv = outerCv; //jdk1.8ºÎÅÍ final »ı·«°¡´É
+		static int scv = outerCv; //jdk1.8ë¶€í„° final ìƒëµ ê°€ëŠ¥ 
 	}
 	
 	void myMethod() {
@@ -20,7 +20,7 @@ class Outer22{
 		class LocalInner {
 			int liv =outerIv;
 			int liv2 = outerCv;
-//			¿ÜºÎÅ¬·¡½ºÀÇ Áö¿ªº¯¼ö´Â finalÀÌ ºÙÀº º¯¼ö(»ó¼ö)¸¸ °¡´ÉÇÏ´Ù.
+//			ì™¸ë¶€í´ë˜ìŠ¤ì˜ ì§€ì—­ë³€ìˆ˜ëŠ” finalì´ ë¶™ì€ ë³€ìˆ˜(ìƒìˆ˜)ë§Œ ì ‘ê·¼ ê°€ëŠ¥í•˜ë‹¤.
 //			int liv3 = lv;
 			int liv4 = LV;
 		}
