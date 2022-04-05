@@ -1,14 +1,18 @@
 class MyTv {
-	private boolean isPowerOn;
-	private int channel;
-	private int volume;
+	
+	boolean isPowerOn;
+	int channel;
+	int volume;
 
+	
 	final int MAX_VOLUME = 100;
 	final int MIN_VOLUME = 0;
 	final int MAX_CHANNEL = 100;
 	final int MIN_CHANNEL = 0;
 	
-	//
+	
+	
+	
 
 }
 public class Exercise7_4 {

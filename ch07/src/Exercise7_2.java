@@ -9,8 +9,9 @@ class SutdaDeck2 {
 			cards[i] = new SutdaCard2(num,isKwang);
 			}
 	}
+
 	
-	//
+	
 	
 }
 

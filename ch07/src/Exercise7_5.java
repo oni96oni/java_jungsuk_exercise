@@ -2,12 +2,13 @@ class MyTv2 {
 	private boolean isPowerOn;
 	private int channel;
 	private int volume;
-
+	
 	final int MAX_VOLUME = 100;
 	final int MIN_VOLUME = 0;
 	final int MAX_CHANNEL = 100;
 	final int MIN_CHANNEL = 0;
 
+	
 	public boolean isPowerOn() {
 		return isPowerOn;
 	}
@@ -26,6 +27,7 @@ class MyTv2 {
 	public void setVolume(int volume) {
 		this.volume = volume;
 	}
+	
 	
 }
 
