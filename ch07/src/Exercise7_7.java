@@ -9,6 +9,6 @@ public class Exercise7_7 {
 
 	public static void main(String[] args) {
 		
-			}
+	}
 
 }
