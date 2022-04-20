@@ -6,11 +6,11 @@ class Ex8_3 {
 		try {
 			System.out.println(3);
 			System.out.println(0/0);
-			System.out.println(4);  // ½ÇÇàµÇÁö ¾Ê´Â´Ù.
-		} catch (Exception e){     // ArithmeticException´ë½Å ExceptionÀ» »ç¿ë.
+			System.out.println(4);  // ì‹¤í–‰ë˜ì§€ì•ŠëŠ”ë‹¤.
+		} catch (Exception e){     // ArithmeticExceptionëŒ€ì‹  Exceptionì„ ì‚¬ìš©(ëª¨ë“  ì˜ˆì™¸í´ë˜ìŠ¤ì˜ ì¡°ìƒì´ë¯€ë¡œ ì–´ë–¤ ì¢…ë¥˜ì˜ ì˜ˆì™¸ê°€ ë°œìƒí•˜ë”ë¼ë„ ì´ catchë¸”ëŸ­ì— ì˜í•´ì„œ ì²˜ë¦¬ëœë‹¤)
 			System.out.println(5);
-		}	// try-catchÀÇ ³¡
+		}	// try-catchì˜ë
 
 		System.out.println(6);
-	}	// main¸Ş¼­µåÀÇ ³¡
+	}	// mainì˜ë
 }

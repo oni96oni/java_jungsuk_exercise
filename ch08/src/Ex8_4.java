@@ -4,15 +4,15 @@ class Ex8_4 {
 		System.out.println(2);
 		try {
 			System.out.println(3);
-			System.out.println(0/0); //¿¹¿Ü¹ß»ı(ArithmeticException)
-			System.out.println(4); 	// ½ÇÇàµÇÁö ¾Ê´Â´Ù.
+			System.out.println(0/0); //ì—ëŸ¬ë°œìƒ(ArithmeticException)
+			System.out.println(4); 	// ì‹¤í–‰ë˜ì§€ì•ŠëŠ”ë‹¤.
 		} catch (ArithmeticException ae)	{
 			if (ae instanceof ArithmeticException) 
 				System.out.println("true");	
 			System.out.println("ArithmeticException");
-		} catch (Exception e){ // ArithmeticExceptionÀ» Á¦¿ÜÇÑ ¸ğµç ¿¹¿Ü°¡ Ã³¸®µÈ´Ù.
+		} catch (Exception e){ // ArithmeticExceptionì„ ì œì™¸í•œ ëª¨ë“  ì˜ˆì™¸ê°€ ì²˜ë¦¬ëœë‹¤.
 			System.out.println("Exception");
-		}	// try-catchÀÇ ³¡
+		}	// try-catchì˜ ë
 		System.out.println(6);
-	}	// main¸Ş¼­µåÀÇ ³¡
+	}	// mainë©”ì„œë“œì˜ ë
 }

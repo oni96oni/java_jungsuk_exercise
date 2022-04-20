@@ -5,8 +5,8 @@ class Ex8_1 {
 				System.out.println(2);
 				System.out.println(3);
 			} catch (Exception e)    {
-				System.out.println(4);  // ½ÇÇàµÇÁö ¾Ê´Â´Ù.(¿¹¿Ü°¡ ¹ß»ıÇÏÁö ¾Ê¾ÒÀ¸´Ï±î!)
-			} // try-catchÀÇ ³¡
+				System.out.println(4);  // ì‹¤í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤. (ì˜ˆì™¸ê°€ ë°œìƒí•˜ì§€ ì•Šì•˜ìœ¼ë‹ˆê¹Œ!)
+			} // try-catchì˜ ë
 			System.out.println(5);
 	}
 }

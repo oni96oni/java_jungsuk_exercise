@@ -5,13 +5,13 @@ class Ex8_5 {
 
 		try {
 			System.out.println(3);
-			System.out.println(0/0); // ¿¹¿Ü¹ß»ı!!!
-			System.out.println(4);   // ½ÇÇàµÇÁö ¾Ê´Â´Ù.
+			System.out.println(0/0); // ì˜ˆì™¸ë°œìƒ! -> ì´ë•Œ ì˜ˆì™¸ ê°ì²´ê°€ ë§Œë“¤ì–´ì§„ë‹¤.
+			System.out.println(4);   // ì‹¤í–‰ë˜ì§€ì•ŠëŠ”ë‹¤.
 		} catch (ArithmeticException ae)	{
-			ae.printStackTrace();
-			System.out.println("¿¹¿Ü¸Ş½ÃÁö : " + ae.getMessage());
-		}	// try-catchÀÇ ³¡
+			ae.printStackTrace(); //ì°¸ì¡°ë³€ìˆ˜ aeë¥¼ í†µí•´ ìƒì„±ëœ ArithmeticExceptionì¸ìŠ¤í„´ìŠ¤ì— ì ‘ê·¼í•  ìˆ˜ ìˆë‹¤.
+			System.out.println("ì˜ˆì™¸ë©”ì‹œì§€ : " + ae.getMessage());
+		}	
 
 		System.out.println(6);
-	}	// main¸Ş¼­µåÀÇ ³¡
+	}	
 }
