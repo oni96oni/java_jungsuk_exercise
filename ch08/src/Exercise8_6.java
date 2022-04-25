@@ -20,8 +20,13 @@ public class Exercise8_6 {
 	}
 	public static void main(String[] args) {
 		method(true);
+		/*
+		  
+		 */
 		method(false);
+		/*
+		 
+		 */
 	}
 
 }
-//1 1256

@@ -27,4 +27,7 @@ class Exercise8_8 {
 	static void method2() {
 		throw new NullPointerException();
 	}
+	/*
+	 
+	 */
 }

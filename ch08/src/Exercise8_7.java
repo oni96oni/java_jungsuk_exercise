@@ -6,20 +6,21 @@ public class Exercise8_7 {
 		int answer = (int)(Math.random()*100)+1;
 		int input = 0;
 		int count = 0;
-		
+
 		do {
 			count++;
-			System.out.print("1°ú 100»çÀÌÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä :");
-			
+			System.out.print("1~100 ì‚¬ì´ì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” :");
+
 			input = new Scanner(System.in).nextInt(); 
-			
+
+
 			if(answer > input) {
-				System.out.println("´õ Å« ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+				System.out.println("ë” í° ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			} else if(answer < input) {
-				System.out.println("´õ ÀÛÀº ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+				System.out.println("ë” ì‘ì€ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			} else {
-				System.out.println("¸ÂÃè½À´Ï´Ù.");
-				System.out.println("½ÃµµÈ½¼ö´Â"+count+"¹øÀÔ´Ï´Ù.");
+				System.out.println("ë§ì·„ìŠµë‹ˆë‹¤.");
+				System.out.println("ì‹œë„íšŸìˆ˜ëŠ”"+count+"ë²ˆì…ë‹ˆë‹¤.");
 				break;
 			}
 		} while (true);

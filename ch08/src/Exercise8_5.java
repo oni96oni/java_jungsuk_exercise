@@ -25,6 +25,3 @@ class Exercise8_5 {
 		throw new NullPointerException();
 	}
 }
-
-//널포인터익셉션을 아리스메틱익셉션이 잡을수 있으면 234출력
-//잡을수 없으면 35
