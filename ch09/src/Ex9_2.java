@@ -1,19 +1,18 @@
 class Person extends Object{
 	
-	long id; //this.id ¿ø·¡ÀÌ¸§Àº ÀÌ°Çµ¥ °°Àº°´Ã¼¾È¿¡¼­´Â »ı·«°¡´É
+	long id; 
 
+	Person(long id) {
+		this.id = id;
+	}
+	
 	public boolean equals(Object obj) {
-		if(!(obj instanceof Person))
-			return false;
+		if(!(obj instanceof Person)) //objê°€ Objectíƒ€ì…ì´ë¯€ë¡œ id ê°’ì„ ì°¸ì¡°í•˜ê¸° ìœ„í•´ì„œëŠ” Personíƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜ì´ í•„ìš”í•˜ë‹¤.
+			return false; //íƒ€ì…ì´ Personì´ ì•„ë‹ˆë©´ ë¹„êµí•  í•„ìš”ê°€ ì—†ë‹¤.
 			
 		Person p = (Person)obj;
 		
 		return this.id == p.id;
-			
-	}
-
-	Person(long id) {
-		this.id = id;
 	}
 }
 
@@ -23,8 +22,8 @@ class Ex9_2 {
 		Person p2 = new Person(8011081111222L);
 
 		if(p1.equals(p2))
-			System.out.println("p1°ú p2´Â °°Àº »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ì‚¬ëŒì…ë‹ˆë‹¤.");
 		else
-			System.out.println("p1°ú p2´Â ´Ù¸¥ »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ì‚¬ëŒì…ë‹ˆë‹¤.");
 	}
 }
