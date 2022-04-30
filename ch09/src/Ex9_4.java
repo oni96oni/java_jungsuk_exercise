@@ -12,35 +12,36 @@ class Card {
 		this.kind = kind;
 		this.number = number;
 	}
-	
-	// equals()¸¦ ¿À¹ö¶óÀÌµùÇÏ¸é hashCode()µµ ¿À¹ö¶óÀÌµù ÇØ¾ßÇÑ´Ù.
+
+	// equals()ë¥¼ ì˜¤ë²„ë¼ì´ë”©í• ë–„ hashcode() ë˜í•œ ê°™ì´ ì˜¤ë²„ë¼ì´ë”© í•´ì£¼ì–´ì•¼í•œë‹¤.
 	public int hashCode() {
-		return Objects.hash(kind, number); // °¡º¯ÀÎÀÚ¶ó¼­ È£Ãâ½Ã ÁöÁ¤ÇÏ´Â °ªÀÇ °³¼ö°¡ Á¤ÇØÁ®ÀÖÁö ¾Ê´Ù.
+		return Objects.hash(kind, number); 
 	}
-	//°¡º¯ÀÎÀÚ¶õ ¸Å°³º¯¼ö°³¼ö°¡ Á¤ÇØÁöÁö¾ÊÀº°Í!
-	
+
 	public boolean equals(Object obj) {
 		if(!(obj instanceof Card))
 			return false;
-		
+
 		Card c = (Card)obj;
 		return this.kind.equals(c.kind) && this.number == c.number;
 	}
-	
+
 	public String toString() {
 		return "kind :"+kind+", number:"+number;
 	}
-	
+
 }
 
 class Ex9_4 {
 	public static void main(String[] args) {
 		Card c1 = new Card();
 		Card c2 = new Card();
-		
+
 		System.out.println(c1.equals(c2));
 		System.out.println();
 		System.out.println(c1.hashCode());
 		System.out.println(c2.hashCode());
+		System.out.println(c1.toString());
+		System.out.println(c2.toString());
 	}
 }
