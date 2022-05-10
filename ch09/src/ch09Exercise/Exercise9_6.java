@@ -1,7 +1,8 @@
 package ch09Exercise;
 
 import java.util.*;
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 class Exercise9_6 {
 	public static void main(String[] args) {
@@ -9,38 +10,47 @@ class Exercise9_6 {
 				"012-3456-7890",
 				"099-2456-7980",
 				"088-2346-9870",
-				"013-3456-7890"};
-		
-		Vector list = new Vector(); // °Ë»ö°á°ú¸¦ ´ãÀ» Vector
-		Scanner s = new Scanner(System.in);
-		
+		"013-3456-7890"};
+
+		Vector list = new Vector();
+		Scanner sc = new Scanner(System.in);
+
 		while(true) {
 			System.out.print(">>");
-			String input = s.nextLine().trim(); // trim()À¸·Î ÀÔ·Â³»¿ë¿¡¼­ °ø¹éÀ» Á¦°Å
-			
-			if(input.equals("")) {
+			String input = sc.nextLine().trim(); 
+
+			if(input.equals("")) { //ì…ë ¥ê°’ì´ ê³µë°±ì´ë¼ë©´ ë‹¤ì‹œ ì…ë ¥í•˜ê²Œ ìœ„ë¡œ ëŒë ¤ë³´ë‚´.
 				continue;
-			} else if(input.equalsIgnoreCase("Q")) {
+			} else if(input.equalsIgnoreCase("Q")) { //ì…ë ¥ê°’ì´ që‚˜ Që©´ í”„ë¡œê·¸ë¨ ì¢…ë£Œ.
 				System.exit(0);
 			}
 
-			String pattern = ".*"+input+".*"; // inputÀ» Æ÷ÇÔÇÏ´Â ¸ğµç ¹®ÀÚ¿­
-			Pattern p = Pattern.compile(pattern);
-			for(int i=0; i< phoneNumArr.length;i++) {
-				String phoneNum = phoneNumArr[i];
-				String tmp = phoneNum.replace("-",""); // phoneNum¿¡¼­ '-'¸¦ Á¦°Å
-				Matcher m = p.matcher(tmp);
-				if(m.find()) { // ÆĞÅÏ°ú ÀÏÄ¡ÇÏ¸é, list¿¡ phoneNumÀ» Ãß°¡ÇÑ´Ù.
-					list.add(phoneNum);
-				}
-			}
 			
-			if(list.size()>0) { // °Ë»ö°á°ú°¡ ÀÖÀ¸¸é
-				System.out.println(list); // °Ë»ö°á°ú¸¦ Ãâ·ÂÇÏ°í
-				list.clear(); // °Ë»ö°á°ú¸¦ »èÁ¦
+
+			if(list.size()>0) {
+				System.out.println(list);
+				list.clear();
 			} else {
-				System.out.println("ÀÏÄ¡ÇÏ´Â ¹øÈ£°¡ ¾ø½À´Ï´Ù.");
+				System.out.println("ì¼ì¹˜í•˜ëŠ” ë²ˆí˜¸ê°€ ì—†ìŠµë‹ˆë‹¤.");
 			}
 		}
-	} // main
+	}
 }
+
+
+/*
+	Pattern
+	ì •ê·œ í‘œí˜„ì‹ì´ ì»´íŒŒì¼ëœ í´ë˜ìŠ¤. ì •ê·œ í‘œí˜„ì‹ì— ëŒ€ìƒ ë¬¸ìì—´ì„ ê²€ì¦í•˜ê±°ë‚˜, í™œìš©í•˜ê¸° ìœ„í•´ ì‚¬ìš©ë˜ëŠ” í´ë˜ìŠ¤ì´ë‹¤. 
+	
+	static Pattern compile(String regex) : ì£¼ì–´ì§„ ì •ê·œì‹ì„ ê°–ëŠ” íŒ¨í„´ì„ ìƒì„±
+	
+	String pattern() : ì»´íŒŒì¼ëœ ì •ê·œ í‘œí˜„ì‹ì„ ë°˜í™˜
+	
+	Matcher matcher(CharSequence input) : íŒ¨í„´ì— ë§¤ì¹­í•  ë¬¸ìì—´ì„ ì…ë ¥í•´ Matcherë¥¼ ìƒì„±
+	
+	Matcher
+	Patterní´ë˜ìŠ¤ë¥¼ ë°›ì•„ ëŒ€ìƒ ë¬¸ìì—´ê³¼ íŒ¨í„´ì´ ì¼ì¹˜í•˜ëŠ” ë¶€ë¶„ì„ ì°¾ê±°ë‚˜ ì „ì²´ ì¼ì¹˜ ì—¬ë¶€ ë“±ì„ íŒë³„í•˜ê¸° ìœ„í•´ ì‚¬ìš©ëœë‹¤. 
+	
+	boolean find() : íŒ¨í„´ì´ ì¼ì¹˜í•˜ëŠ” ë‹¤ìŒ ë¬¸ìì—´ì„ ì°¾ëŠ”ë‹¤. ë‹¤ìŒ ë¬¸ìì—´ì´ ìˆë‹¤ë©´ true
+
+ */
