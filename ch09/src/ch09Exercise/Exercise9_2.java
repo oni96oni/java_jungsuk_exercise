@@ -34,5 +34,6 @@ class Point3D{
 	}
 	
 	public String toString() {
+		
 	}
 }

@@ -3,15 +3,13 @@ import java.util.ArrayList;
 public class AutoBoxing {
 
 	public static void main(String[] args) {
-		ArrayList<Integer> list = new ArrayList<>(); //°´Ã¼¸¸ ÀúÀå°¡´ÉÇÑ Å¬·¡½ºÀÎµ¥ ±âº»ÇüÀúÀå°¡´É
-		//ÄÄÆÄÀÏ·¯°¡ ¹Ù²ãÁÖ´Ï±î (¿ÀÅä¹Ú½Ì,¾ğ¹Ú½Ì)
-		list.add(100); // jdk1.5ÀÌÀü¿¡´Â ¿¡·¯ ¿Ö³Ä list¿¡´Â °´Ã¼¸¸ Ãß°¡°¡´ÉÇß´Âµ¥ ÀÌÁ¦ °¡´ÉÇÏ°Ô‰çÀ½ ¿Ö?
-		//ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î ¹Ù²ãÁÖ´Ï±î ¿ø·¡´Â ¾Æ·¡¸ğ½ÀÀÌ¾úÀ½ ¿ÀÅä¹Ú½Ì¶§¹®¿¡ À§Ã³·³ »ç¿ë°¡´É
-		list.add(new Integer(100));
+		ArrayList<Integer> list = new ArrayList<>(); //ArrayList ë°°ì—´ 
+		list.add(100); // jdk1.5ì´ì „ì—ëŠ” ê¸°ë³¸í˜•ê³¼ ì°¸ì¡°í˜• ê°„ì˜ ì—°ì‚°ì´ ë¶ˆê°€ëŠ¥í–ˆì—ˆë‹¤.
+		list.add(new Integer(100)); //ì»´íŒŒì¼ëŸ¬ê°€ ì¶”ê°€í•´ì£¼ëŠ”ê²ƒì„ ì‘ì„±í•´ë³´ì•˜ë‹¤.
 		
-		Integer i = list.get(0); //list¿¡ ÀúÀåµÈ Ã¹¹øÂ° °´Ã¼¸¦ ²¨³½´Ù.
-		int k = list.get(0).intValue(); // intValue()·Î Integer¸¦ int·Î ¹İÈ¯
-		int j = list.get(0); //intValue()·Î Integer¸¦ int·Î º¯È¯
+		Integer i = list.get(0); //list
+		int k = list.get(0).intValue(); // intValue()
+		int j = list.get(0); //intValue()
 		
 	}
 

@@ -5,7 +5,7 @@ class Ex9_14 {
 
 		System.out.println("i==i2 ? "+(i==i2));
 		System.out.println("i.equals(i2) ? "+i.equals(i2));
-		System.out.println("i.compareTo(i2)="+i.compareTo(i2));
+		System.out.println("i.compareTo(i2)="+i.compareTo(i2)); //비교 결과가 같으면 0 오른쪽값이 크면 음수 작으면 양수
 		System.out.println("i.toString()="+i.toString());
 
 		System.out.println("MAX_VALUE="+Integer.MAX_VALUE);

@@ -2,19 +2,12 @@ package ch09Exercise;
 
 public class Exercise9_3 {
 	public static int count(String src, String target) {
-		int count=0;
-		int pos =0;
+		int count=0; // ì°¾ì€ íšŸìˆ˜
+		int pos =0; // ì°¾ê¸° ì‹œì‘í•  ìœ„ì¹˜
 
 		
 	}
 		
-		// (1) ¹İº¹¹®À» »ç¿ëÇØ¼­ ¾Æ·¡ÀÇ °úÁ¤À» ¹İº¹ÇÑ´Ù.
-		
-		// 1. src¿¡¼­ targetÀ» posÀÇ À§Ä¡ºÎÅÍ Ã£´Â´Ù.
-		// 2. Ã£À¸¸é countÀÇ °ªÀ» 1 Áõ°¡ ½ÃÅ°°í,
-		// posÀÇ °ªÀ» target.length¸¸Å­ Áõ°¡½ÃÅ²´Ù.
-		// 3. indexOfÀÇ °á°ú°¡ -1ÀÌ¸é ¹İº¹¹®À» ºüÁ®³ª°¡¼­ count¸¦ ¹İÈ¯ÇÑ´Ù.
-	
 	public static void main(String[] args) {
 		System.out.println(count("12345AB12AB345AB", "AB"));
 		System.out.println(count("12345", "AB"));

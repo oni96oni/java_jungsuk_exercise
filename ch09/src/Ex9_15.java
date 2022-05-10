@@ -8,13 +8,13 @@ class Ex9_15 {
 		int i5 = Integer.parseInt("100",8);
 		int i6 = Integer.parseInt("100",16);
 		int i7 = Integer.parseInt("FF", 16);
-//		int i8 = Integer.parseInt("FF");     // NumberFormatException¹ß»ı
+//		int i8 = Integer.parseInt("FF");     // NumberFormatExceptionë°œìƒ
 
 		Integer i9 = Integer.valueOf("100",2);
 		Integer i10 = Integer.valueOf("100",8);
 		Integer i11 = Integer.valueOf("100",16);
 		Integer i12 = Integer.valueOf("FF",16);
-//		Integer i13 = Integer.valueOf("FF"); // NumberFormatException¹ß»ı
+//		Integer i13 = Integer.valueOf("FF"); // NumberFormatExceptionë°œìƒ
 
 		System.out.println(i);
 		System.out.println(i2);

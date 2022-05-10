@@ -2,17 +2,17 @@ class Ex9_16 {
 	public static void main(String[] args) {
 		int i = 10;
 
-		// ±âº»ÇüÀ» ÂüÁ¶ÇüÀ¸·Î Çüº¯È¯(Çüº¯È¯ »ı·«°¡´É)
+		// ê¸°ë³¸í˜•ì„ ì°¸ì¡°í˜•ìœ¼ë¡œ ë³€í™˜(í˜•ë³€í™˜ ìƒëµê°€ëŠ¥, ì»´íŒŒì¼ëŸ¬ê°€ ëŒ€ì‹  í•´ì£¼ê¸° ë•Œë¬¸ì—!)
 		Integer intg = (Integer)i; // Integer intg = Integer.valueOf(i);
 		Object obj = (Object)i;    // Object obj = (Object)Integer.valueOf(i);
 
 		Long     lng = 100L;  // Long lng = new Long(100L);
 
-		int i2 = intg + 10;   // ÂüÁ¶Çü°ú ±âº»Çü°£ÀÇ ¿¬»ê °¡´É
-		long l = intg + lng;  // ÂüÁ¶Çü °£ÀÇ µ¡¼Àµµ °¡´É
+		int i2 = intg + 10;   // ì°¸ì¡°í˜•ê³¼ ê¸°ë³¸í˜•ê°„ì˜ ì—°ì‚° ê°€ëŠ¥
+		long l = intg + lng;  // ì°¸ì¡°í˜• ê°„ì˜ ë§ì…ˆë„ ê°€ëŠ¥
 
 		Integer intg2 = new Integer(20);
-		int i3 = (int)intg2;  // ÂüÁ¶ÇüÀ» ±âº»ÇüÀ¸·Î Çüº¯È¯µµ °¡´É(Çüº¯È¯ »ı·«°¡´É)
+		int i3 = (int)intg2;  // ì°¸ì¡°í˜•ì„ ê¸°ë³¸í˜•ìœ¼ë¡œ í˜•ë³€í™˜ë„ ê°€ëŠ¥(í˜•ë³€í™˜ ìƒëµê°€ëŠ¥)
 
 		Integer intg3 = intg2 + i3; 
 
