@@ -6,7 +6,10 @@ import java.util.*;
 public class Exercise10_03 {
 
 	static int paycheckCount(Calendar from, Calendar to) {
-	
+		int mondiff = 0;
+		
+		return mondiff;
+	}
 	
 	static void printResult(Calendar from, Calendar to) {
 		Date fromDate = from.getTime();

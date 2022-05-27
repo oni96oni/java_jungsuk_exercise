@@ -3,20 +3,20 @@ package Exercise10;
 import java.text.*;
 import java.util.*;
 
-class Exercise10_0 4 {
+class Exercise10_04 {
 	public static void main(String[] args) {
 		Calendar date1 = Calendar.getInstance();
 		Calendar date2 = Calendar.getInstance();
-		date1.set(2000, 0, 1); // 2000³â 1¿ù 1ÀÏ·Î ³¯Â¥¸¦ ¼³Á¤ÇÑ´Ù.
-		date2.set(2016, 0, 29); // 2016³â 1¿ù 29ÀÏ·Î ³¯Â¥¸¦ ¼³Á¤ÇÑ´Ù.
+		date1.set(1996, 7, 4); // 2000ë…„ 1ì›” 1ì¼ë¡œ ë‚ ì§œë¥¼ ì„¤ì •í•œë‹¤.
+		date2.set(2022, 4, 27); // 2016ë…„ 1ì›” 29ì¼ë¡œ ë‚ ì§œë¥¼ ì„¤ì •í•œë‹¤.
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-		System.out.println("birth day="
+		System.out.println("birth day = "
 				+ df.format(new Date(date1.getTimeInMillis())));
-		System.out.println("today ="
+		System.out.println("today = "
 				+ df.format(new Date(date2.getTimeInMillis())));
 		long difference =
 				(date2.getTimeInMillis() - date1.getTimeInMillis())/1000;
 		System.out.println(difference/(24*60*60)
-				+" days"); // 1ÀÏ = 24 * 60 * 60
+				+" days"); // 1ì¼ = 24 * 60 * 60
 	}
 }

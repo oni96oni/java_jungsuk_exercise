@@ -2,24 +2,24 @@ package Exercise10;
 
 import java.util.*;
 import java.text.*;
+
 class Exercise10_02 {
 	public static void main(String[] args) {
 		String pattern = "yyyy/MM/dd";
-		String pattern2 = "ÀÔ·ÂÇÏ½Å ³¯Â¥´Â E¿äÀÏÀÔ´Ï´Ù."; // 'E'´Â ÀÏ~Åä ÁßÀÇ ÇÏ³ª°¡ µÈ´Ù.
+		String pattern2 = "ì…ë ¥í•˜ì‹  ë‚ ì§œëŠ” Eìš”ì¼ì…ë‹ˆë‹¤."; // 'E'ëŠ” ì¼~í†  ì¤‘ì˜ í•˜ë‚˜ê°€ ëœë‹¤.
 		DateFormat df = new SimpleDateFormat(pattern);
 		DateFormat df2 = new SimpleDateFormat(pattern2);
 		Scanner s = new Scanner(System.in);
 		Date inDate = null;
 		do {
-			System.out.println("³¯Â¥¸¦"+pattern+"ÀÇ ÇüÅÂ·Î ÀÔ·ÂÇØÁÖ¼¼¿ä.(ÀÔ·Â¿¹:2017/05/11)");
+			System.out.println("ë‚ ì§œë¥¼ " + pattern
+					+ "ì˜ í˜•íƒœë¡œ ì…ë ¥í•´ì£¼ì„¸ìš”.(ì…ë ¥ì˜ˆ:2017/05/11)");
 			try {
 				System.out.print(">>");
-				inDate = df.parse(s.nextLine());
-				break;
-			} catch (Exception e) {
-			}
-		}while(true);
+				inDate = df.parse(s.nextLine()); // ì…ë ¥ë°›ì€ ë‚ ì§œë¥¼ Dateë¡œ ë³€í™˜í•œë‹¤.
+				break; // parse()ì—ì„œ ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ ì´ ë¬¸ì¥ì€ ìˆ˜í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤.
+			} catch(Exception e) {}
+		} while(true);
 		System.out.println(df2.format(inDate));
-		
 	} // main
 }
