@@ -1,8 +1,10 @@
-package Exercise10;
+package handbook_Exercise10;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 public class HandbookExercise3_5 {
 	public static void main(String[] args) {
@@ -32,5 +34,9 @@ public class HandbookExercise3_5 {
 		System.out.println(dt5);
 		System.out.println(dt6);
 		System.out.println(dt7);
+		
+		ZoneId zid = ZoneId.of("Asia/Seoul");
+		ZonedDateTime zdt = dateTime.atZone(zid);
+		System.out.println(zdt);		
 	}
 }

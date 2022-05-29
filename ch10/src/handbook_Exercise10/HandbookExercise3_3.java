@@ -1,4 +1,4 @@
-package Exercise10;
+package handbook_Exercise10;
 
 import java.text.MessageFormat;
 import java.time.LocalDate;
