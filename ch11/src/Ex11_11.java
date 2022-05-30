@@ -21,17 +21,21 @@ class Person {
 		this.name = name;
 		this.age = age;
 	}
-
+	
+	@Override
 	public String toString() {
 		return name +":"+ age;
 	}
 	
+//	@Override
 //	public boolean equals(Object obj) {
-//		if(!(obj instanceof Person)) return false;
+//		if(!(obj instanceof Person)) 
+//			return false;
 //		Person p = (Person)obj;
 //		return name.equals(p.name) && age == p.age;
 //	}
 //	
+//	@Override
 //	public int hashCode() {
 //		return Objects.hash(name, age);
 //	}

@@ -2,7 +2,7 @@ import java.util.*;
 
 class Ex11_6 {
 	public static void main(String[] args) {
-		int[]	   arr   = {0,1,2,3,4};
+		int[]	arr   = {0,1,2,3,4};
 		int[][]	arr2D = {{11,12,13}, {21,22,23}};
 
 		System.out.println("arr="+Arrays.toString(arr));
@@ -32,7 +32,13 @@ class Ex11_6 {
 			Arrays.fill(graph, '*');
 			System.out.println(new String(graph)+i);
 		}
-
+		
+		String[] str  = new String[]{"AAA","BBB"};
+		String[] str2 = new String[]{"AAA","BBB"};
+		
+		System.out.println(Arrays.equals(str, str2));     // true
+		System.out.println(Arrays.deepEquals(str, str2)); // true
+		
 		String[][] str2D  = new String[][]{{"aaa","bbb"},{"AAA","BBB"}};
 		String[][] str2D2 = new String[][]{{"aaa","bbb"},{"AAA","BBB"}};
 
@@ -42,6 +48,7 @@ class Ex11_6 {
 		char[] chArr = { 'A', 'D', 'C', 'B', 'E' };
 
 		System.out.println("chArr="+Arrays.toString(chArr));
+		System.out.println("= Before sorting =");
 		System.out.println("index of B ="+Arrays.binarySearch(chArr, 'B'));
 		System.out.println("= After sorting =");
 		Arrays.sort(chArr);

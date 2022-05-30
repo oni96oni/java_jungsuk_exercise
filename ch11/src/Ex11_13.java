@@ -10,5 +10,6 @@ class Ex11_13 {
 		}
 
 		System.out.println(set);
+		//11_10예제 참고, Treeset은 따로 정렬하는 과정을 거치지 않아도 저장하는 과정에서 정렬한다.
 	}
 }

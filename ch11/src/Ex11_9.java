@@ -6,16 +6,18 @@ class Ex11_9 {
 		Set set = new HashSet();
 
 		for(int i=0; i < objArr.length; i++) {
-			System.out.println(objArr[i]+"="+set.add(objArr[i]));	// HashSet¿¡ objArrÀÇ ¿ä¼ÒµéÀ» ÀúÀåÇÑ´Ù.
+			set.add(objArr[i]);	// HashSetì— objArrì˜ ìš”ì†Œë“¤ì„ ì €ìž¥í•œë‹¤.
 		}
-                // HashSet¿¡ ÀúÀåµÈ ¿ä¼ÒµéÀ» Ãâ·ÂÇÑ´Ù.
+		
+        // HashSetì— ì €ìž¥ëœ ìš”ì†Œë“¤ì„ ì¶œë ¥í•œë‹¤.
 		System.out.println(set);	
 
-		// HashSet¿¡ ÀúÀåµÈ ¿ä¼ÒµéÀ» Ãâ·ÂÇÑ´Ù(IteratorÀÌ¿ë)
+		// HashSetì— ì €ìž¥ëœ ìš”ì†Œë“¤ì„ ì¶œë ¥í•œë‹¤.(Iteratorì´ìš©)
 		Iterator it = set.iterator();
 		
 		while(it.hasNext()) {
 			System.out.println(it.next());	
 		}
+		//ì¶œë ¥ë˜ëŠ” 1ì¤‘ í•˜ë‚˜ëŠ” ë¬¸ìžì—´ "1" ì´ê³ , í•˜ë‚˜ëŠ” Integerê°ì²´ 1ì´ë‹¤. Setì—ì„œëŠ” ìˆœì„œë¥¼ ì•Œ ìˆ˜ ì—†ìœ¼ë¯€ë¡œ êµ¬ë¶„ë¶ˆê°€.
 	}
 }
