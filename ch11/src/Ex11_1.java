@@ -3,12 +3,8 @@ import java.util.*;
 class Ex11_1 {
 	public static void main(String[] args) {
 		ArrayList list1 = new ArrayList(10);
-		//±âº» ±æÀÌ(¿ë·®, capacity)°¡ 10ÀÎ ArrayList¸¦ »ı¼º
 		list1.add(new Integer(5));
-		//ArrayList¿¡´Â °´Ã¼¸¸ ÀúÀå°¡´É! ±×·±µ¥ ¾î¶»°Ô ¼ıÀÚ°¡ ÀúÀåÀÌµÇ´Â°Å¾ß?
-		//Á¤´äÀº autoboxing¿¡ ÀÇÇØ¼­ ±âº»ÇüÀÌ ÂüÁ¶ÇüÀ¸·Î ÀÚµ¿ º¯È¯
-//		list1.add(5); ÀÌ°ÍÀÌ À§³ª ¾Æ·¡Ã³·³ ÀÚµ¿º¯È¯À» ÇØÁÖ´Â°Í! 
-		list1.add(new Integer(4)); 
+		list1.add(new Integer(4));
 		list1.add(new Integer(2));
 		list1.add(new Integer(0));
 		list1.add(new Integer(1));
@@ -17,7 +13,7 @@ class Ex11_1 {
 		ArrayList list2 = new ArrayList(list1.subList(1,4)); 
 		print(list1, list2);
 
-		Collections.sort(list1);	// list1°ú list2¸¦ Á¤·ÄÇÑ´Ù.
+		Collections.sort(list1);	// list1ê³¼ list2ë¥¼ ì •ë ¬í•œë‹¤.
 		Collections.sort(list2);	// Collections.sort(List l)
 		print(list1, list2);
 
@@ -31,29 +27,19 @@ class Ex11_1 {
 
 		list2.set(3, "AA");
 		print(list1, list2);
-		
-		list1.add(0,"1");
-		// indexOf()´Â ÁöÁ¤µÈ °´Ã¼ÀÇ À§Ä¡(ÀÎµ¦½º)¸¦ ¾Ë·ÁÁØ´Ù.
-		System.out.println("index="+ list1.indexOf("1"));
-		//¿©±â¼­ 1°ú "1"Àº ´Ù¸£Áö¸¸ µÑ´Ù µé¾î°¡¸ç ÄÜ¼ÖÃ¢¿¡´Â °°Àº 1·Î Ç¥½ÃµÈ´Ù!
-		print(list1, list2);
-		
-		list1.remove(1); //ÀÎµ¦½º°¡ 1ÀÎ °´Ã¼¸¦ »èÁ¦
-		list1.remove(new Integer(1)); //°´Ã¼¾È¿¡ integer 1 ÀÎ °´Ã¼¸¦ »èÁ¦
-		print(list1, list2);
-		
-		// list1¿¡¼­ list2¿Í °ãÄ¡´Â ºÎºĞ¸¸ ³²±â°í ³ª¸ÓÁö´Â »èÁ¦ÇÑ´Ù.
+
+		// list1ì—ì„œ list2ì™€ ê²¹ì¹˜ëŠ” ë¶€ë¶„ë§Œ ë‚¨ê¸°ê³  ë‚˜ë¨¸ì§€ëŠ” ì‚­ì œí•œë‹¤.
 		System.out.println("list1.retainAll(list2):" + list1.retainAll(list2));
 
 		print(list1, list2);
 
-		//  list2¿¡¼­ list1¿¡ Æ÷ÇÔµÈ °´Ã¼µéÀ» »èÁ¦ÇÑ´Ù.
+		//  list2ì—ì„œ list1ì— í¬í•¨ëœ ê°ì²´ë“¤ì„ ì‚­ì œí•œë‹¤.
 		for(int i= list2.size()-1; i >= 0; i--) {
 			if(list1.contains(list2.get(i)))
 				list2.remove(i);
 		}
 		print(list1, list2);
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 
 	static void print(ArrayList list1, ArrayList list2) {
 		System.out.println("list1:"+list1);
