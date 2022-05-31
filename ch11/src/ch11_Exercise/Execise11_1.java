@@ -21,5 +21,4 @@ public class Execise11_1 {
 		while(!stack.empty())
 			System.out.println(stack.pop());
 	}
-
 }

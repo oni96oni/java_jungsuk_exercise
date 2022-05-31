@@ -29,6 +29,10 @@ class Ex11_16 {
 				System.out.println("id와 비밀번호가 일치합니다.");
 				break;
 			}
+			
+			System.out.println(map.keySet()); //이런식으로 해도 출력되지 않는다.
+			System.out.println(map.values());
+
 		} // while
-	} // main�쓽 �걹
+	} // main의 끝
 }

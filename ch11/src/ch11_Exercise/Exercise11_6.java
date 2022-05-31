@@ -12,10 +12,7 @@ public class Exercise11_6 {
 			set.add((int)(Math.random()*30)+1+"");
 		}
 		
-		ArrayList list = new ArrayList(set);
-		Collections.shuffle(list);
-		
-		Iterator it = list.iterator();
+		Iterator it = set.iterator();
 		
 		for(int i=0; i<board.length; i++) {
 			for(int j=0; j<board[i].length; j++) {
@@ -25,5 +22,4 @@ public class Exercise11_6 {
 			System.out.println();
 		}
 	}
-
 }

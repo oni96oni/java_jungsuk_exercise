@@ -2,18 +2,18 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class Ex11_18 {
+class Ex11_18 {
 	public static void main(String[] args) {
 		String[] data = { "A","K","A","K","D","K","A","K","K","K","Z","D" };
 
 		HashMap map = new HashMap();
 
 		for(int i=0; i < data.length; i++) {
-			if(map.containsKey(data[i])) {
+			if(map.containsKey(data[i])) { // mapë°ì´í„°ì— data[i]ê°€ ë“¤ì–´ê°€ ìžˆëƒ? ìžˆìœ¼ë©´ true ì—†ìœ¼ë©´ false ë°˜í™˜.
 				int value = (int)map.get(data[i]);
-				map.put(data[i], value+1);  // ±âÁ¸¿¡ ÀÖ´Â Å°´Â ±âÁ¸ °ª¿¡ 1À» ´õÇØ¼­ ÀúÀå
+				map.put(data[i], value+1);  // ê¸°ì¡´ì— ì¡´ìž¬í•˜ëŠ” í‚¤ë©´ ê¸°ì¡´ ê°’ì„ 1ì¦ê°€
 			} else {
-				map.put(data[i], 1);	    // ±âÁ¸¿¡ ¾ø´Â Å°´Â °ªÀ» 1·Î ÀúÀå		
+				map.put(data[i], 1);	    // ê¸±ì¡´ì— ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” í‚¤ëŠ” ê°’ì„ 1ë¡œ ì €ìž¥		
 			}
 		}
 
@@ -29,9 +29,9 @@ public class Ex11_18 {
 	public static String printBar(char ch, int value) { 
 		char[] bar = new char[value]; 
 
-		for(int i=0; i < bar.length; i++)
+		for(int i=0; i < bar.length; i++) //ì¦‰, bar[0]='#', bar[1]='#', ''' , bar[bar.length]='#' ì´ëŸ°ì‹ìœ¼ë¡œ ë°°ì—´ì´ ìƒê¹€
 			bar[i] = ch; 
 
-		return new String(bar); // String(char[] chArr)
+		return new String(bar); // String(char[] chArr), ë°°ì—´ì„ ë§¤ê°œë³€ìˆ˜ë¡œ Stringìœ¼ë¡œ ì´ì–´ë²„ë¦°ë‹¤.
 	}
 }

@@ -1,6 +1,7 @@
 package ch11_Exercise;
 
 import java.util.HashSet;
+import java.util.Objects;
 
 class SutdaCard{
 	int num;
@@ -16,7 +17,7 @@ class SutdaCard{
 	}
 	
 	public boolean equals(Object obj) {
-		if( obj instanceof SutdaCard) {
+		if(obj instanceof SutdaCard) {
 			SutdaCard c = (SutdaCard) obj;
 			return num == c.num && isKwang == c.isKwang;
 		} else {
@@ -27,8 +28,6 @@ class SutdaCard{
 	public String toString() {
 		return num + (isKwang ? "K" : "");
 	}
-	
-	
 	
 }
 public class Exercise11_5 {

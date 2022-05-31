@@ -7,6 +7,8 @@ class Student2 {
 	int kor;
 	int eng;
 	int math;
+	
+	
 	Student2(String name, int ban, int no, int kor, int eng, int math) {
 		this.name = name;
 		this.ban = ban;
@@ -15,6 +17,8 @@ class Student2 {
 		this.eng = eng;
 		this.math = math;
 	}
+	
+	
 	int getTotal() {
 		return kor+eng+math;
 	}
@@ -33,11 +37,14 @@ class Student2 {
 				;
 	}
 } // class Student
+
+
 class BanNoAscending implements Comparator {
 	public int compare(Object o1, Object o2) {
 		
 	}
 }
+
 class Exercise11_4 {
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList();
