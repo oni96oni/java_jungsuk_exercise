@@ -5,7 +5,7 @@ enum Direction2 {
 	private final int value;
 	private final String symbol;
 
-	Direction2(int value, String symbol) { // Á¢±Ù Á¦¾îÀÚ privateÀÌ »ı·«µÊ
+	Direction2(int value, String symbol) { // ì ‘ê·¼ ì œì–´ì privateì´ ìƒëµë¨
 		this.value  = value;
 		this.symbol = symbol;
 	}
@@ -20,11 +20,11 @@ enum Direction2 {
         return DIR_ARR[dir - 1];
 	}	
 
-	// ¹æÇâÀ» È¸Àü½ÃÅ°´Â ¸Ş¼­µå. numÀÇ °ª¸¸Å­ 90µµ¾¿ ½Ã°è¹æÇâÀ¸·Î È¸ÀüÇÑ´Ù.
+	// ë°©í–¥ì„ íšŒì „ì‹œí‚¤ëŠ” ë©”ì„œë“œ. numì˜ ê°’ë§Œí¼ 90ë„ì”© ì‹œê³„ë°©í–¥ìœ¼ë¡œ íšŒì „í•œë‹¤.
 	public Direction2 rotate(int num) {
 		num = num % 4;
 
-		if(num < 0) num +=4; // numÀÌ À½¼öÀÏ ¶§´Â ½Ã°è¹İ´ë ¹æÇâÀ¸·Î È¸Àü 
+		if(num < 0) num +=4; // numì´ ìŒìˆ˜ì¼ ë•ŒëŠ” ì‹œê³„ë°˜ëŒ€ ë°©í–¥ìœ¼ë¡œ íšŒì „ 
 
 		return DIR_ARR[(value-1+num) % 4];
 	}

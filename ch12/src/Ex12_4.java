@@ -30,13 +30,14 @@ class Ex12_4 {
 		fruitBox.add(new Grape2());
 		appleBox.add(new Apple2());
 		appleBox.add(new Apple2());
+//		appleBox.add(new Grape2()); applebox는 apple2타입만 받을 수 있다.
 
 		System.out.println(Juicer.makeJuice(fruitBox));
 		System.out.println(Juicer.makeJuice(appleBox));
 	}  // main
 }
 
-class FruitBox2<T extends Fruit2> extends Box2<T> {}
+class FruitBox2<T extends Fruit2> extends Box2<T> {} //FruitBox2는 Fruit2와 그 자손들만 받을 수 있다.
 
 class Box2<T> {
 	ArrayList<T> list = new ArrayList<T>();

@@ -3,6 +3,6 @@ class Parent {
 }
 
 class Child extends Parent {
-	@Override
-	void parentmethod() { } // Á¶»ó ¸Ş¼­µåÀÇ ÀÌ¸§À» Àß¸ø Àû¾úÀ½. 
+	@Override //ì´ ì• ë„ˆí…Œì´ì…˜ì´ ì—†ìœ¼ë©´ ì˜¤ë¥˜ë¥¼ ì°¾ê¸° í˜ë“¬!
+	void parentmethod() { } // ì¡°ìƒ ë©”ì„œë“œì˜ ì´ë¦„ì„ ì˜ëª» ì ì—ˆìŒ. 
 }
