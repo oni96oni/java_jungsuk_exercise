@@ -9,19 +9,30 @@ class Ex14_6 {
 
 		Stream<File> fileStream = Stream.of(fileArr);
 
-		// map()À¸·Î Stream<File>À» Stream<String>À¸·Î º¯È¯
+		// map()ìœ¼ë¡œ Stream<File>ì„ Stream<String>ìœ¼ë¡œ ë³€í™˜
 		Stream<String> filenameStream = fileStream.map(File::getName);
-		filenameStream.forEach(System.out::println); // ¸ğµç ÆÄÀÏÀÇ ÀÌ¸§À» Ãâ·Â
+		filenameStream.forEach(System.out::println); // ëª¨ë“  íŒŒì¼ì˜ ì´ë¦„ì„ ì¶œë ¥
 
-		fileStream = Stream.of(fileArr);  // ½ºÆ®¸²À» ´Ù½Ã »ı¼º
+		fileStream = Stream.of(fileArr);  // ìŠ¤íŠ¸ë¦¼ì„ ë‹¤ì‹œ ìƒì„±
 
-		fileStream.map(File::getName)     // Stream<File> ¡æ Stream<String>
-			  .filter(s -> s.indexOf('.')!=-1)   // È®ÀåÀÚ°¡ ¾ø´Â °ÍÀº Á¦¿Ü
-			  .map(s -> s.substring(s.indexOf('.')+1)) // È®ÀåÀÚ¸¸ ÃßÃâ
-			  .map(String::toUpperCase)     // ¸ğµÎ ´ë¹®ÀÚ·Î º¯È¯
-			  .distinct()                   //  Áßº¹ Á¦°Å
+		fileStream.map(File::getName)     // Stream<File> â†’ Stream<String>
+			  .filter(s -> s.indexOf('.')!=-1)   // í™•ì¥ìê°€ ì—†ëŠ” ê²ƒì€ ì œì™¸
+			  .map(s -> s.substring(s.indexOf('.')+1)) // í™•ì¥ìë§Œ ì¶”ì¶œ
+			  .map(String::toUpperCase)     // ëª¨ë‘ ëŒ€ë¬¸ìë¡œ ë³€í™˜
+			  .distinct()                   //  ì¤‘ë³µ ì œê±°
 			  .forEach(System.out::print);  // JAVABAKTXT	
 
 		System.out.println();
+		
+		
+		//peek() ì˜ˆì‹œ
+		
+		fileStream = Stream.of(fileArr);  
+		fileStream.map(File::getName)
+				.filter(s -> s.indexOf('.')!=-1)
+				.peek(s->System.out.printf("filename=%s%n",s))
+				.map(s -> s.substring(s.indexOf('.')+1))
+				.peek(s->System.out.printf("extension=%s%n",s))
+				.forEach(System.out::println);
 	}
 }

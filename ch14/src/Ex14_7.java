@@ -23,7 +23,7 @@ class Ex14_7 {
 		};
 
 		Stream<String> lineStream = Arrays.stream(lineArr);
-		lineStream.flatMap(line -> Stream.of(line.split(" +")))
+		lineStream.flatMap(line -> Stream.of(line.split(" +"))) // " +"는 정규식 표현으로 하나 이상의 공백을 의미. 결과는 문자열 s를 공백을 구분잘 자른 문자열 배열
 			.map(String::toLowerCase)
 			.distinct()
 			.sorted()
