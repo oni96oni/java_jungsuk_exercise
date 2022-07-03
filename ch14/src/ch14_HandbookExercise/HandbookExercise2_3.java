@@ -37,7 +37,7 @@ public class HandbookExercise2_3 {
 		doubleStream.limit(5).forEach(System.out::println);
 		
 		/*람다식을 소스로 하는 스트림 생성하기
-		static <T> Stream<T> iterate(T seed,UnaryOperator<T> f) // 이전 요소에 종속적
+		static <T> Stream<T> iterate(T seed, UnaryOperator<T> f) // 이전 요소에 종속적
 		static <T> Stream<T> generate(Supplier<T> s) // 이전 요소에 독립적
 		*/
 		Stream<Integer> evenStream = Stream.iterate(0, n->n+2); // 0,2,4,6, ...
