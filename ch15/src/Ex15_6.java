@@ -4,14 +4,14 @@ class Ex15_6 {
 	public static void main(String args[]) {
 		try {
 		     FileOutputStream fos = new FileOutputStream("123.txt");
-		     // BufferedOutputStreamÀÇ ¹öÆÛ Å©±â¸¦ 5·Î ÇÑ´Ù.
+		     // BufferedOutputStreamì˜ ë²„í¼ í¬ê¸°ë¥¼ 5ë¡œ í•œë‹¤.
 		     BufferedOutputStream bos = new BufferedOutputStream(fos, 5);
-		     // ÆÄÀÏ 123.txt¿¡  1 ºÎÅÍ 9±îÁö Ãâ·ÂÇÑ´Ù.
+		     // íŒŒì¼ 123.txtì—  1 ë¶€í„° 9ê¹Œì§€ ì¶œë ¥í•œë‹¤.
 		     for(int i='1'; i <= '9'; i++) {
 			     bos.write(i);
 		     }
-
-		     fos.close();  // FileOutputStreamÀ» ´İ´Â´Ù
+//		     bos.close();  //bos.close()ë¥¼ í•´ì£¼ì–´ì•¼ ë²„í¼ì— ë‚¨ì•„ìˆëŠ” ë°ì´í„°ê°€ ì¶œë ¥ëœë‹¤. bos.close()í•´ì£¼ë©´ fos.close()ë„ ì•Œì•„ì„œ í•´ì¤€ë‹¤.
+		     fos.close();  // FileOutputStreamì„ ë‹«ëŠ”ë‹¤
 		} catch (IOException e) {
 		     e.printStackTrace();		
 		}

@@ -5,7 +5,7 @@ class Ex15_3 {
 	public static void main(String[] args) {
 		byte[] inSrc = {0,1,2,3,4,5,6,7,8,9};
 		byte[] outSrc = null;
-		byte[] temp = new byte[4];	// ÀÌÀü ¿¹Á¦¿Í ¹è¿­ÀÇ Å©±â°¡ ´Ù¸£´Ù.
+		byte[] temp = new byte[4];	// ì´ì „ ì˜ˆì œì™€ ë°°ì—´ì˜ í¬ê¸°ê°€ ë‹¤ë¥´ë‹¤.
 
 		ByteArrayInputStream  input  = null;
 		ByteArrayOutputStream output = null;
@@ -16,7 +16,7 @@ class Ex15_3 {
 		System.out.println("Input Source  :" + Arrays.toString(inSrc));
 
 		try {
-			while(input.available() > 0) {
+			while(input.available() > 0) { // ìŠ¤íŠ¸ë¦¼ìœ¼ë¡œë¶€í„° ì½ì–´ ì˜¬ ìˆ˜ ìˆëŠ” ë°ì´í„°ì˜ í¬ê¸°
 				input.read(temp);
 				output.write(temp); 
 
@@ -24,7 +24,7 @@ class Ex15_3 {
 				printArrays(temp, outSrc);
 			}
 		} catch(IOException e) {}
-	} // mainÀÇ ³¡
+	} // mainì˜ ë
 
 	static void printArrays(byte[] temp, byte[] outSrc) {
 		System.out.println("temp          :" +Arrays.toString(temp));

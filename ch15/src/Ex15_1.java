@@ -14,10 +14,10 @@ class Ex15_1 {
 
 		int data = 0;
 
-		while((data = input.read())!=-1)
+		while((data = input.read())!=-1) // -1ì´ ë‚˜ì˜¨ê²ƒì€ ë”ì´ìƒ ì½ì–´ì˜¬ ë°ì´í„°ê°€ ì—†ë‹¤ëŠ” ëœ»!
 			output.write(data);	// void write(int b)
 
-		outSrc = output.toByteArray(); // ½ºÆ®¸²ÀÇ ³»¿ëÀ» byte¹è¿­·Î ¹İÈ¯ÇÑ´Ù.
+		outSrc = output.toByteArray(); // ìŠ¤íŠ¸ë¦¼ì˜ ë‚´ìš©ì„ byteë°°ì—´ë¡œ ë°˜í™˜í•œë‹¤.
 
 		System.out.println("Input Source  :" + Arrays.toString(inSrc));
 		System.out.println("Output Source :" + Arrays.toString(outSrc));

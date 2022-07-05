@@ -13,9 +13,9 @@ class Ex15_2 {
 		input  = new ByteArrayInputStream(inSrc);
 		output = new ByteArrayOutputStream();
 
-		input.read(temp,0,temp.length); // �о� �� �����͸� �迭 temp�� ��´�.
-		output.write(temp,5, 5);        // temp[5]���� 5���� �����͸� write�Ѵ�.
-
+		input.read(temp,0,temp.length); // 읽어 온 데이터를 배열 temp에 담는다.
+		output.write(temp,5, 5);        // temp[5]부터 5개의 데이터를 write한다.
+		//둘다 첫번째 매개변수는 읽거나 쓸 배열 지정, 두번째 매개변수는 그 지점부터 시작, 세번째 매개변수는 읽을 갯수
 		outSrc = output.toByteArray();
 
 		System.out.println("Input Source  :" + Arrays.toString(inSrc));

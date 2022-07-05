@@ -2,8 +2,8 @@ import java.io.*;
 
 class FileViewer {
 	public static void main(String args[]) throws IOException {
-		FileInputStream fis = new FileInputStream(args[0]);
-//	 ÀÌÅ¬¸³½º¿¡¼­´Â À­ ÁÙ ´ë½Å ¾Æ·¡ ÁÙ ÀÔ·ÂÇÏ°í Run(ctrl+F11)À¸·Î ½ÇÇà 
+		FileInputStream fis = new FileInputStream(".\\src\\FileViewer.java");
+//	 	ì´í´ë¦½ìŠ¤ì—ì„œëŠ” ìœ— ì¤„ ëŒ€ì‹  ì•„ë˜ ì¤„ ì…ë ¥í•˜ê³  Run(ctrl+F11)ìœ¼ë¡œ ì‹¤í–‰ 
 //		FileInputStream fis = new FileInputStream(".\\src\\FileViewer.java");
 
 		int data = 0;
