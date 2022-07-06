@@ -3,14 +3,14 @@ import java.io.*;
 class Ex15_11 {
 	public static void main(String[] args) {
 		try {
-			FileReader fr = new FileReader("Ex15_11.java");
-//    ÀÌÅ¬¸³½º¿¡¼­´Â À­ ÁÙ ´ë½Å ¾Æ·¡ ÁÙ ÀÔ·Â
-// 		FileReader fr = new FileReader(".\\src\\Ex15_11.java");
+//			FileReader fr = new FileReader("Ex15_11.java");
+//    ì´í´ë¦½ìŠ¤ì—ì„œëŠ” ìœ— ì¤„ ëŒ€ì‹  ì•„ë˜ ì¤„ ì…ë ¥
+			FileReader fr = new FileReader(".\\src\\Ex15_11.java");
 			BufferedReader br = new BufferedReader(fr);
 
 			String line = "";
 			for(int i=1;(line = br.readLine())!=null;i++) { 
-				//  ";"¸¦ Æ÷ÇÔÇÑ ¶óÀÎÀ» Ãâ·ÂÇÑ´Ù.
+				//  ";"ë¥¼ í¬í•¨í•œ ë¼ì¸ì„ ì¶œë ¥í•œë‹¤.
 				if(line.indexOf(";")!=-1)	
 					 System.out.println(i+":"+line);
 			}

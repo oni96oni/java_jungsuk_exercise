@@ -10,7 +10,7 @@ class Ex15_18 {
 		File dir = new File(args[0]); 
 
 		if(!dir.exists() || !dir.isDirectory()) {
-			System.out.println("À¯È¿ÇÏÁö ¾ÊÀº µğ·ºÅä¸®ÀÔ´Ï´Ù.");
+			System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ ë””ë ‰í† ë¦¬ì…ë‹ˆë‹¤.");
 			System.exit(0);
 		} 
 
@@ -18,7 +18,7 @@ class Ex15_18 {
 
 		for (int i = 0; i < list.length; i++) { 
 			String fileName = list[i].getName(); 
-			// ÆÄÀÏ¸í 
+			// íŒŒì¼ëª… 
 			String newFileName = "0000" + fileName; 
 			newFileName = newFileName.substring(newFileName.length() - 7); 
 			list[i].renameTo(new File(dir, newFileName)); 

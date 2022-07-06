@@ -10,7 +10,7 @@ class Ex15_16 {
 		File f = new File(args[0]);
 
 		if(!f.exists() || !f.isDirectory()) {
-			System.out.println("À¯È¿ÇÏÁö ¾ÊÀº µğ·ºÅä¸®ÀÔ´Ï´Ù.");
+			System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ ë””ë ‰í† ë¦¬ì…ë‹ˆë‹¤.");
 			System.exit(0);
 		} 
 
@@ -18,8 +18,7 @@ class Ex15_16 {
 
 		for(int i=0; i < files.length; i++) {
 			String fileName = files[i].getName();
-			System.out.println(
-files[i].isDirectory() ? "["+fileName+"]" : fileName);
+			System.out.println(files[i].isDirectory() ? "["+fileName+"]" : fileName);
 		}
 	} // main
 }

@@ -8,14 +8,14 @@ class Ex15_8 {
 			FileReader fr = new FileReader(fileName);
 
 			int data =0;
-			// FileInputStreamÀ» ÀÌ¿ëÇØ¼­ ÆÄÀÏ³»¿ëÀ» ÀĞ¾î È­¸é¿¡ Ãâ·ÂÇÑ´Ù.
+			// FileInputStreamì„ ì´ìš©í•´ì„œ íŒŒì¼ë‚´ìš©ì„ ì½ì–´ í™”ë©´ì— ì¶œë ¥í•œë‹¤.
 			while((data=fis.read())!=-1) {
 				System.out.print((char)data);
 			}
 			System.out.println();
 			fis.close();
 
-			// FileReader¸¦ ÀÌ¿ëÇØ¼­ ÆÄÀÏ³»¿ëÀ» ÀĞ¾î È­¸é¿¡ Ãâ·ÂÇÑ´Ù.
+			// FileReaderë¥¼ ì´ìš©í•´ì„œ íŒŒì¼ë‚´ìš©ì„ ì½ì–´ í™”ë©´ì— ì¶œë ¥í•œë‹¤.
 			while((data=fr.read())!=-1)
 				System.out.print((char)data);
 			System.out.println();
