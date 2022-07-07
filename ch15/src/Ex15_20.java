@@ -17,12 +17,12 @@ public class Ex15_20 {
 			list.add(u1);
 			list.add(u2);
 
-			// °´Ã¼¸¦ Á÷·ÄÈ­ÇÑ´Ù.
+			// ê°ì²´ë¥¼ ì§ë ¬í™”í•œë‹¤.
 			out.writeObject(u1);
 			out.writeObject(u2);
 			out.writeObject(list);
 			out.close();
-			System.out.println("Á÷·ÄÈ­°¡ Àß ³¡³µ½À´Ï´Ù.");
+			System.out.println("ì§ë ¬í™”ê°€ ì˜ ëë‚¬ìŠµë‹ˆë‹¤.");
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
