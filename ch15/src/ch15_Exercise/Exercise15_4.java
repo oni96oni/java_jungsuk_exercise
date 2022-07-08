@@ -1,8 +1,8 @@
 package ch15_Exercise;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
+import java.io.*;
+import java.util.regex.*;
+import java.util.*;
 
 public class Exercise15_4 {
 
@@ -21,7 +21,7 @@ public class Exercise15_4 {
 		while(true) {
 			try {
 
-				String prompt = curDir.getCanonicalPath() + ">>";
+				String prompt = curDir.getCanonicalPath() + ">>"; //파일의 경로를 반환.
 				System.out.println(prompt);
 
 				// 화면으로부터 라인단위로 입력받는다
@@ -44,21 +44,27 @@ public class Exercise15_4 {
 					for(int i=0; i<argArr.length; i++) {
 						System.out.println(argArr[i]);
 					}
-				} catch(Exception e) {
-					e.printStackTrace();
-					System.out.println("입력 오류입니다.");
 				}
-			}
-
-			private static void cd() {
-				if(angArr.length==1) {
-					System.out.println(curDir);
-					return;
-				} else if (argArr.length > 2) {
-					System.out.println("USAGE : cd directory");
-					return;
-				}
-				
-				String subDir = argArr[1];
+			} catch(Exception e) {
+				e.printStackTrace();
+				System.out.println("입력 오류입니다.");
 			}
 		}
+	}
+
+
+	public static void cd() {
+		if(argArr.length==1) {
+			System.out.println(curDir);
+			return;
+		} else if (argArr.length > 2) {
+			System.out.println("USAGE : cd directory");
+			return;
+		}
+
+		String subDir = argArr[1];
+
+		
+		
+	} // cd()
+}
