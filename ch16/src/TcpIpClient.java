@@ -6,22 +6,27 @@ public class TcpIpClient {
 		try {
 			String serverIp = "127.0.0.1";
 
-			System.out.println("╪╜╧Ж©║ ©╛╟Ааъют╢о╢ы. ╪╜╧ЖIP :" + serverIp);
-			// ╪рдою╩ ╩Щ╪╨го©╘ ©╛╟Аю╩ ©Дц╩гя╢ы.
+			System.out.println("Л└°К╡└Л≈░ Л≈╟Й╡╟Л╓▒Л·┘К▀┬К▀╓. Л└°К╡└IP :" + serverIp);
+			// Л├▄Л╪⌠Л²└ Л┐²Л└╠М∙≤Л≈╛ Л≈╟Й╡╟Л²└ Л ■Л╡╜М∙°К▀╓.
 			Socket socket = new Socket(serverIp, 7777); 
 
-			// ╪рдоюг ют╥б╫╨ф╝╦╡ю╩ ╬Р╢б╢ы.
+			// Л├▄Л╪⌠Л²≤ Л·┘К═╔Л┼╓М┼╦К╕╪Л²└ Л√╩К┼■К▀╓.
 			InputStream in = socket.getInputStream();
 			DataInputStream dis = new DataInputStream(in);
+			
+			OutputStream out = socket.getOutputStream();
+			DataOutputStream dos = new DataOutputStream(out);
 
-			// ╪рдою╦╥н ╨нем ╧чю╨ ╣╔юлем╦╕ цБ╥бгя╢ы.
-			System.out.println("╪╜╧Ж╥н╨нем ╧чю╨ ╦ч╫цаЖ :"+dis.readUTF());      
-			System.out.println("©╛╟Аю╩ а╬╥Агу╢о╢ы.");
+			dos.writeUTF("М│╢К²╪Л²╢Л√╦М┼╦ -> Л└°К╡└ К█╟Л²╢М└╟Л═└Л├║М┘▄Л┼╓М┼╦ 2022-07-19");
 
-			// ╫╨ф╝╦╡╟З ╪рдою╩ ╢щ╢б╢ы.
+			// Л├▄Л╪⌠Л°╪К║° К╤─М└╟ К╟⌡Л²─ К█╟Л²╢М└╟К╔╪ Л╤°К═╔М∙°К▀╓.
+			System.out.println("Л└°К╡└К║°К╤─М└╟ К╟⌡Л²─ К╘■Л▀°Л╖─ :"+dis.readUTF());      
+			System.out.println("Л≈╟Й╡╟Л²└ Л╒┘Кё▄М∙╘К▀┬К▀╓.");
+
+			// Л┼╓М┼╦К╕╪ЙЁ╪ Л├▄Л╪⌠Л²└ К▀╚К┼■К▀╓.
 			dis.close();
 			socket.close();
-			System.out.println("©╛╟Аюл а╬╥А╣г╬З╫ю╢о╢ы.");
+			System.out.println("Л≈╟Й╡╟Л²╢ Л╒┘Кё▄К░≤Л≈┬Л┼╣К▀┬К▀╓.");
 		} catch(ConnectException ce) {
 			ce.printStackTrace();
 		} catch(IOException ie) {

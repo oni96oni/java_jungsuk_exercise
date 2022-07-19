@@ -5,7 +5,7 @@ public class Ex16_4 {
 	public static void  main(String args[]) {
 		URL url = null;
 		BufferedReader input = null;
-		String address = "http:/ /www.codechobo.com/sample/hello.html";
+		String address = "https://www.naver.com/";
 		String line = "";
 
 		try {
