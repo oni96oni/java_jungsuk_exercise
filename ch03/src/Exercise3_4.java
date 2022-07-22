@@ -2,11 +2,11 @@
 public class Exercise3_4 {
 
 	public static void main(String[] args) {
-		int numOfApples = 123;
+		int numOfApples = 120;
 		int sizeOfBucket = 10;
-		int numOfBucket = 
+		int numOfBucket = 0;
 				
-		System.out.println("ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö:" + numOfBucket);
+		System.out.println("í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜:" + numOfBucket);
 	}
 
 }
