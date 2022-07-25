@@ -1,10 +1,10 @@
 class Ex4_8 {
 	public static void main(String args[]) {
-		int i=1; // º¯¼öÀÇ scope (¹üÀ§) Á¼À»¼ö·Ï ÁÁÀº°ÍÀÌ´Ù. -¼±¾ð À§Ä¡ºÎÅÍ ¼±¾ðµÈ ºí·°ÀÇ ³¡±îÁö
-		// º¯¼öÀÇ ¹üÀ§°¡ ³ÐÀ» ¼ö·Ï È®ÀÎÇØ¾ßÇÏ´Â ¹üÀ§°¡ ³Ð¾î¼­ ³ªÁß¿¡ Ã£±âÈûµé¾îÁø´Ù.
+		int i=1; // ë³€ìˆ˜ì˜ scope (ë²”ìœ„) ì¢ì„ìˆ˜ë¡ ì¢‹ì€ê²ƒì´ë‹¤. -ì„ ì–¸ ìœ„ì¹˜ë¶€í„° ì„ ì–¸ëœ ë¸”ëŸ­ì˜ ëê¹Œì§€
+		// ë³€ìˆ˜ì˜ ë²”ìœ„ê°€ ë„“ì„ ìˆ˜ë¡ í™•ì¸í•´ì•¼í•˜ëŠ” ë²”ìœ„ê°€ ë„“ì–´ì„œ ë‚˜ì¤‘ì— ì°¾ê¸°íž˜ë“¤ì–´ì§„ë‹¤.
 		
-		for (;true;) { // °ýÈ£{}¾ÈÀÇ ¹®ÀåÀ» 3¹ø ¹Ýº¹
-			//Á¶°Ç½Ä »ý·«°¡´ÉÇÏ´Ù. »ý·«ÇÏ¸é true·Î °£ÁÖµÇ¾î¼­ ¹«ÇÑ¹Ýº¹¹®ÀÌ µÈ´Ù.
+		for (;true;) {
+			//ì¡°ê±´ì‹ ìƒëžµê°€ëŠ¥í•˜ë‹¤. ìƒëžµí•˜ë©´ trueë¡œ ê°„ì£¼ë˜ì–´ì„œ ë¬´í•œë°˜ë³µë¬¸ì´ ëœë‹¤.
 			System.out.println("i="+i);
 		}
 	}

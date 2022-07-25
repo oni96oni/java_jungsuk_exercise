@@ -9,5 +9,5 @@ class Ex4_11 {
 			}
 			System.out.println();
 		}
-	} // main¿« ≥°
+	}
 }

@@ -4,3 +4,4 @@ public class Exercise4_3 {
 		
 	}
 }
+// 이중 for문 사용, 사용x 둘다 가능.

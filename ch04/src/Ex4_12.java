@@ -6,5 +6,5 @@ class Ex4_12 {
 			i--;
 			System.out.println(i + " - I can do it.");
 		}
-	} // main¿« ≥°
+	}
 }
