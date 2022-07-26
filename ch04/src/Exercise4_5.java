@@ -10,6 +10,7 @@ public class Exercise4_5 {
 	for->while
 */
 		
+		
+		
 	}
-
 }
