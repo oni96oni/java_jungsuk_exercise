@@ -21,7 +21,7 @@ class Ex5_1 {
 			System.out.print(iArr1[i]+",");	
 		}
 		System.out.println();
-
+		
 		System.out.println(Arrays.toString(iArr2));
 		System.out.println(Arrays.toString(iArr3));
 		System.out.println(Arrays.toString(chArr));
