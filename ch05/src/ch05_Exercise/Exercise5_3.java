@@ -5,7 +5,7 @@ public class Exercise5_3 {
 		int[] arr = { 10, 20, 30, 40, 50 };
 		int sum = 0;
 		
-		//
+		
 		
 		System.out.println("sum=" + sum);
 	}

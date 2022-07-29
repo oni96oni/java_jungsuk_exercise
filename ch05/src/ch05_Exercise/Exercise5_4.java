@@ -13,7 +13,7 @@ public class Exercise5_4 {
 		int total =0;
 		float average =0.0f;
 		
-	
+		
 		
 		System.out.println("total="+total);
 		System.out.println("average="+average);
