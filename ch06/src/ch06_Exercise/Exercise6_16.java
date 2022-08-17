@@ -1,3 +1,4 @@
+package ch06_Exercise;
 class Exercise6_16 {
 	
 	public static void change(String str) {
@@ -13,5 +14,6 @@ class Exercise6_16 {
 
 }
 
-// 예측 결과값 : ABC123
-//            ABC123456
+// 예측 결과값 
+//
+//

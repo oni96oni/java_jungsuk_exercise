@@ -1,3 +1,4 @@
+package ch06_Exercise;
 
 public class Exercise6_7 {
 	int x = 0, y =0; //Marine의 위치좌표(x,y)

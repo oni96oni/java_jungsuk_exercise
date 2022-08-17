@@ -1,3 +1,4 @@
+package ch06_Exercise;
 
 class Exercise6_20 {
 	
@@ -8,5 +9,7 @@ class Exercise6_20 {
 		System.out.println("최대값:"+max(null));
 		System.out.println("최대값:"+max(new int[] {}));
 	}
+
+	
 
 }

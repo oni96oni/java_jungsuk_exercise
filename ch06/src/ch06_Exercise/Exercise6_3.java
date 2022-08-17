@@ -1,3 +1,4 @@
+package ch06_Exercise;
 import javax.naming.spi.DirStateFactory.Result;
 
 public class Exercise6_3 {

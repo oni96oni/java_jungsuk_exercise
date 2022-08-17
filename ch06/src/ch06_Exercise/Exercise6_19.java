@@ -1,3 +1,4 @@
+package ch06_Exercise;
 class MyTv {
 	boolean isPowerOn;
 	int channel;

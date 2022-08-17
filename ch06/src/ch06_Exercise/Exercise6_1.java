@@ -1,3 +1,4 @@
+package ch06_Exercise;
 class Student222 {
 	String name;
 	int ban;

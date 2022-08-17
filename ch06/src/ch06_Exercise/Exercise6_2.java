@@ -1,3 +1,4 @@
+package ch06_Exercise;
 public class Exercise6_2 {
 
 	public static void main(String[] args) {
@@ -8,6 +9,4 @@ public class Exercise6_2 {
 	}
 }
 
-class Student62 {
-
-}
+class Student62 {}
