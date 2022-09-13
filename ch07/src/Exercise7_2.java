@@ -10,7 +10,26 @@ class SutdaDeck2 {
 			}
 	}
 
-	
+	public SutdaCard2 pick(int i) {
+		return cards[i];
+	}
+
+	public void shuffle() {
+		
+		int j = (int) (Math.random() * 19) + 1;
+		for(int i=0; i<cards.length; i++) {
+			SutdaCard2 tmp = cards[i];
+			cards[i] = cards[j];
+			cards[j] = tmp;
+		}
+	}
+
+	public SutdaCard2 pick() {
+		int j = (int) (Math.random() * 19) + 1;
+		return cards[j];
+	}
+
+	//
 	
 	
 }

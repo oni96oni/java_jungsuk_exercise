@@ -1,4 +1,3 @@
-
 class Outer223{
 	static class Inner {
 		int iv = 200;
